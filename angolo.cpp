@@ -1,7 +1,7 @@
 #include <iostream>
 /*Scrivi un programma che richiede all'utente la misura dell'angolo di un triangolo (numero compreso fra 0 e 180 e comunica se è retto)
 (=90) acuto (<90) e ottuso (>90)*/
-//ciaooo c'è non è poossibileeed
+//ciaooo c'è non è poossibileeedd
 using namespace std;
 
 int main(){
