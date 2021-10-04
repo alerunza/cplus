@@ -15,6 +15,7 @@ int main(){
 
     cout<<"Il risultato della circonferenza e': "<<circo<<endl;
     cout<<"Il risultato dell'area e': "<<area<<endl;
+    //bravo
 
     return 0;
 }
