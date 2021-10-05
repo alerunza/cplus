@@ -7,8 +7,7 @@ int main(){
     int num2;
 
     cout<<"Dai due numeri, per scoprire quale sara' quello maggiore!"<<endl;
-        cin>>num1;
-        cin>>num2;
+        cin>>num1>>num2;
     if(num1>num2){
         cout<<"Numero maggiore trovato: "<<num1<<endl;
     }

@@ -16,8 +16,6 @@ int main(){
         
         cout<<"x1 = "<<x1<<endl; //Soluzioni reali
         cout<<"x2 = "<<x2<<endl; //Soluzioni reali
-        cout<<"Zacchy ti ringrazia"<<endl;
-
     return 0;
     system("pause");
 }

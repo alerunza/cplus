@@ -18,7 +18,7 @@ int main(){
     
     cout<<"Immetti la tariffa del biglietto"<<endl;
         cin>>biglietto;
-    cout<<"Scegli la modalita' di sconto del biglietto"<<endl;
+    cout<<"Scegli la modalita' di sconto del biglietto - 1(Pensionato) - 2(Studentesco) - 3(Disoccupato) - 0: Nessuno sconto"<<endl;
         cin>>sceltabiglietto;
 
     switch(sceltabiglietto){
