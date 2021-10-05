@@ -1,2 +1,2 @@
 # cplus
-C++ with the ITET Rapisardi Da Vinci
+C++ with ITET Rapisardi Da Vinci
