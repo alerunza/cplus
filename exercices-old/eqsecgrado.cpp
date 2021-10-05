@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
     float a, b, c;
-    double x1, x2, delta; // Dichiara come il float ma più lungo (64bit)
+    double x1, x2; // Dichiara come il float ma più lungo (64bit)
     
         cout<<"Inserisci i valori: a, b, c"<<endl; //Stampa per l'utente
             cin>>a>>b>>c; // Digita per l'utente, per memorizzare l'inserzione
