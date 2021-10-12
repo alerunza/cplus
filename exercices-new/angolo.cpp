@@ -9,12 +9,12 @@ int main(){
     cout<<"Inserisci un valore del tuo angolo tra 0 e 180"<<endl;
         cin>>angolo;
 
-    if(angolo<180){
+    if(angolo<=180){
         if(angolo==90){
             cout<<"Angolo Retto: "<<angolo<<endl;
         }
         else{
-            if(angolo<90){
+            if(angolo<=90){
                 cout<<"Angolo Acuto: "<<angolo<<endl;
             }
             else{
