@@ -1,5 +1,5 @@
 #include <iostream>
-/* consegna/titolo dell'esercizio */
+/* consegna */
 using namespace std;
 
 int main(){
