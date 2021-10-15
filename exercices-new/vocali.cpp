@@ -9,19 +9,19 @@ void funzionetest(){
           cin>>vocale;
 
          switch(vocale){
-          case 'A':
+          case 'A && a':
           cout<<"Vocale esistente"<<endl;
           break;
-          case 'E':
+          case 'E && e':
           cout<<"Vocale esistente"<<endl;
           break;
-          case 'I':
+          case 'I && i':
           cout<<"Vocale esistente"<<endl;
           break;
-          case 'O':
+          case 'O && o':
           cout<<"Vocale esistente"<<endl;
           break;
-          case 'U':
+          case 'U && u':
           cout<<"Vocale esistente"<<endl;
           break;
           default:
