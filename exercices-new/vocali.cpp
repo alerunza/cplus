@@ -2,13 +2,13 @@
 /* Leggere un carattere e dire se è una vocale */
 using namespace std;
 
-int main(){
+void funzionetest(){
      char vocale;
 
      cout<<"inserisci una vocale"<<endl;
           cin>>vocale;
 
-     switch(vocale){
+         switch(vocale){
           case 'A':
           cout<<"Vocale esistente"<<endl;
           break;
@@ -26,7 +26,22 @@ int main(){
           break;
           default:
           cout<<"Consonante!"<<endl;
-          break;
+          break; 
+          }
      }
-    return 0;
+
+int main(){
+     int opzione;
+
+     funzionetest();
+
+     cout<<"Vuoi continuare per vedere se e' una vocale o meno?\n1 - si\n2 - no"<<endl;
+          cin>>opzione;
+     if(opzione==1){
+          funzionetest();
+     }
+     else{
+          cout<<"Buona giornata"<<endl;
+     }
+   return 0;
 }
