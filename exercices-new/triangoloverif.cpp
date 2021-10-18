@@ -15,8 +15,11 @@ int main(){
      if((l1==l2) && (l2!=l3)){
           cout<<"Triangolo isoscele\n";
      }
-     if((l1!=l2) && (l2!=l3)){
+/*      if((l1!=l2) && (l2!=l3)){
           cout<<"Triagolo scaleno\n";
+     } */
+     else{
+          cout<<"Triangolo scaleno\n";
      }
     return 0;
 }
