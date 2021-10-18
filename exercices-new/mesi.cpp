@@ -3,7 +3,11 @@
 di stabilire la stagione corrispondente al mese inserito
 come intero dall’utente. 
 • Esempio: se l’utente digita 1 (Gennaio) il programma deve
-stampare Inverno. */
+stampare Inverno. Qualora il mese sia Marzo, Giugno, Settembre e
+Dicembre, tutti mesi a cavallo di due stagioni, si richieda
+all’utente di specificare anche il giorno. Se il giorno e’
+compreso tra 1 e 20 si considera la stagione precedente
+altrimenti quella successiva.*/
 // inverno (12,1,2)
 // primavera (3,4,5)
 // estate (6-7-8)
@@ -12,34 +16,73 @@ stampare Inverno. */
 using namespace std;
 
 int main(){
-     int n;
+     int m; //mese
+     int d; //giorno
 
-     cout<<"Inserisci un numero dell'anno\n";
-          cin>>n;   
+     cout<<"Inserisci un mese dell'anno\n";
+          cin>>m;   
 
-     switch(n){
-          case 12:
+     switch(m){
           case 1:
           case 2:
           cout<<"Inverno"<<endl;
           break;
-          case 3:
           case 4:
           case 5:
           cout<<"Primavera"<<endl;
           break;
-          case 6:
           case 7:
           case 8:
           cout<<"Estate"<<endl;
           break;
-          case 9:
           case 10:
           case 11:
           cout<<"Autunno"<<endl;
           break;
-          default:
-          cout<<"Stagione e mese non rilevato";
      }
+     if(m>=13){
+          cout<<"Numero non valido"<<endl;
+     }
+     if(m==3){
+          cout<<"Immetti il giorno di Marzo"<<endl;
+               cin>>d;
+          if(d<=20){
+               cout<<"Inverno - "<<d<<" "<<"Marzo"<<endl;
+          }
+          else{
+               cout<<"Primavera - "<<d<<" "<<"Marzo"<<endl;
+          }
+     }
+     if(m==6){
+          cout<<"Immetti il giorno di Giugno"<<endl;
+               cin>>d;
+          if(d<=20){
+               cout<<"Primavera - "<<d<<" "<<"Giugno"<<endl;
+          }
+          else{
+               cout<<"Estate - "<<d<<" "<<"Giugno"<<endl;
+          }
+     }
+     if(m==9){
+          cout<<"Immetti il giorno di Settembre"<<endl;
+               cin>>d;
+          if(d<=20){
+               cout<<"Estate - "<<d<<" "<<"Settembre"<<endl;
+          }
+          else{
+               cout<<"Autunno - "<<d<<" "<<"Settembre"<<endl;
+          }
+     }
+     if(m==12){
+          cout<<"Immetti il giorno di Dicembre"<<endl;
+               cin>>d;
+          if(d<=20){
+               cout<<"Autunno - "<<d<<" "<<"Dicembre"<<endl;
+          }
+          else{
+               cout<<"Inverno - "<<d<<" "<<"Dicembre"<<endl;
+          }
+     }
+
     return 0;
 }
