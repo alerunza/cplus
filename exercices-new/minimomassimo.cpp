@@ -8,7 +8,7 @@ int main(){
 
     cin>>n1>>n2;
 
-    cout<<min(n1,n2)<<endl;
-    cout<<max(n1,n2)<<endl;
+    cout<<fmin(n1,n2)<<endl;
+    cout<<fmax(n1,n2)<<endl;
     return 0;
 }
