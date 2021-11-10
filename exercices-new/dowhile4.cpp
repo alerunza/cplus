@@ -11,13 +11,13 @@ int main(){
 
     do{
 
-        cout<<"Inserisci una serie di numeri - Sei in serie da: "<<serie++<<endl;
+        cout<<"Inserisci una serie di numeri - Tenativo n."<<serie++<<endl;
             cin>>num;
         somma+=num;
     }
     while(somma<=100);
     
-    cout<<"Hai raggiunto 100 - "<<somma<<" Con una serie da "<<serie<<endl;
+    cout<<"Hai raggiunto "<<somma<<"/100"<<" Tentativi: "<<serie<<endl;
     
     return 0;
 }
