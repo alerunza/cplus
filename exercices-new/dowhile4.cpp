@@ -15,9 +15,9 @@ int main(){
             cin>>num;
         somma+=num;
     }
-    while(somma!=100);
+    while(somma<=100);
     
-    cout<<"Hai raggiunto 100 - "<<somma<<"Con una serie da "<<serie<<endl;
+    cout<<"Hai raggiunto 100 - "<<somma<<" Con una serie da "<<serie<<endl;
     
     return 0;
 }
