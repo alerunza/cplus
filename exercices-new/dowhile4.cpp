@@ -7,17 +7,20 @@ using namespace std;
 int main(){   
     
     float num, somma;
-    int serie = 0;
+    int tentativi = 0;
+    int tentativo;
+
+    cout<<"Inserisci il numero di tentativi per raggiungere 100"<<endl;
+        cin>>tentativo;
 
     do{
-
-        cout<<"Inserisci una serie di numeri - Tenativo n."<<serie++<<endl;
+        cout<<"Inserisci una serie di numeri - Tentativo n."<<tentativi++<<endl;
             cin>>num;
         somma+=num;
     }
-    while(somma<=100);
+    while((somma<=100) && (tentativi!=tentativo));
     
-    cout<<"Hai raggiunto "<<somma<<"/100"<<" Tentativi: "<<serie<<endl;
+    cout<<"Hai raggiunto "<<somma<<"/100"<<" Tentativi: "<<tentativi<<endl;
     
     return 0;
 }
