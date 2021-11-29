@@ -7,7 +7,7 @@ int main(){
     float n, somma;
 
     do{
-        cout<<"Inserisci un numero di numeri"<<endl;
+        cout<<"Inserisci un numero per arrivare a 20"<<endl;
             cin>>n;
         somma+=n;
     }
