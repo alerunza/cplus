@@ -9,7 +9,7 @@ int main(){
      cout<<"Inserisci 3 lati"<<endl;
           cin>>l1>>l2>>l3;
      
-     if(l1>l2)&(l2>l3)&&(l2>l1){
+     if((l1>l2)&(l2>l3)&&(l2>l1)){
           cout<<"Triangolo"<<endl;
      }
      else{
