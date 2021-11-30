@@ -19,7 +19,7 @@ int main(){
     while(contavoto!=voti){
         cout<<"Inserisci il voto - "<<contavoto++<<endl;
             cin>>voto;                                          //COSTRUTTO WHILE
-        somma = somma + voto / 3;
+        somma = somma + voto / voti;
     }
 
         cout<<"La media dei tuoi voti e' "<<somma<<endl;
