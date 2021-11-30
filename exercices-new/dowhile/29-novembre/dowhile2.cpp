@@ -4,21 +4,28 @@ Accanto ad ogni numero deve comparire la scritta "pari" / "dispari". */
 using namespace std;
 
 int main(){
-    int n, n2;
+    int n, conta=1;
 
     cout<<"Inserisci un numero INTERO"<<endl;
         cin>>n;
 
-    while(n>1){
-        n2=n%2;
-        if(n2==0){
-            cout<<n<<" Pari"<<endl;
-
+    while(conta<=n){
+        if(conta%2==0){
+            cout<<conta<<" - Pari"<<endl;
         }
-        if(n2!=0){
-            cout<<n<<" Dispari"<<endl;
+        else{
+            cout<<conta<<" - Dispari"<<endl;
         }
+        conta++;
     }
+
+/*     while(conta<=n){
+
+        cout<<conta<<" - Dispari"<<endl;
+        conta++;
+        cout<<conta<<" - Pari"<<endl;
+        conta++;
+    } */
 
     return 0;
 }
