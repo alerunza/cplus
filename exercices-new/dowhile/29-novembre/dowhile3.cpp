@@ -9,7 +9,7 @@ int main(){
     do{
         cout<<"Inserisci un numero per arrivare a 20"<<endl;
             cin>>n;
-        somma+=n;
+        somma = somma + n; // o somma+=n;
     }
     while(somma<=20);
     

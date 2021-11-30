@@ -19,13 +19,5 @@ int main(){
         conta++;
     }
 
-/*     while(conta<=n){
-
-        cout<<conta<<" - Dispari"<<endl;
-        conta++;
-        cout<<conta<<" - Pari"<<endl;
-        conta++;
-    } */
-
     return 0;
 }
