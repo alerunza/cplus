@@ -6,7 +6,7 @@ using namespace std;
 int main(){   
     float n, somma;
 
-    do{
+/*      do{
         cout<<"Inserisci un numero per arrivare a 20"<<endl;
             cin>>n;
         somma = somma + n; // o somma+=n;
@@ -14,6 +14,13 @@ int main(){
     while(somma<=20);
     
     cout<<"Hai raggiunto "<<somma<<"/20"<<endl;
-    
+ */
+
+    while(somma<=20){
+        cout<<"Inserisci un numero fino ad arrivare a 20"<<endl;
+            cin>>n;
+        somma+=n;
+    }
+
     return 0;
 }
