@@ -14,7 +14,7 @@ int main(){
         cin>>tentutente;
 
 /*     do{
-        cout<<"Inserisci una serie di numeri - Tentativo n."<<tentativi++<<endl;        COSTRUTTO DO-WHILE
+        cout<<"Inserisci una serie di numeri - Tentativo n."<<tentativi++<<endl;        //COSTRUTTO DO-WHILE
             cin>>n;
         somma = somma + n;
     }

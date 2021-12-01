@@ -11,8 +11,8 @@ int main(){
 
 /*     do{
         cout<<"Inserisci il voto - "<<contavoto++<<endl;
-            cin>>voto;                                          COSTRUTTO DO-WHILE
-        somma = somma + voto / 3;
+            cin>>voto;                                          //COSTRUTTO DO-WHILE
+        somma = somma + voto / voti;
     }
     while(contavoto!=voti); */
 
