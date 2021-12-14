@@ -4,16 +4,21 @@ video tutti i numeri dispari compresi tra due estremi e  letti da tastiera. Il p
 using namespace std;
 
 int main(){
-     int a, b, i=a;
+    int a, b, c = 0;
 
-     cin>>a>>b;
+    cout<<"inserisci 2 numeri"<<endl;
+        cin>>a>>b;
 
-     while(i<=b){
-          if(a%2!=0){
-               i++;
-          }
-          i+=2;
-     }
-     cout<<i<<endl;
+    while(a<=b){
+        if(a%2==1){
+            cout<<"\n "<<a<<" - "<<c<<endl;
+            a++;
+            c++;
+        }
+        else{
+            a++;
+        }
+    }
+    cout<<"Conta Numeri: "<<c<<endl;
     return 0;
 }
