@@ -14,8 +14,6 @@ int main(){
           }
           i+=2;
      }
-
-
      cout<<i<<endl;
     return 0;
 }
