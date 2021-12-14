@@ -2,17 +2,20 @@
 /* Calcolare la somma di tutti i numeri interi compresi fra due valori positivi dati in input */
 using namespace std;
 
-int main(){
-     int somma, a, b;
+int main() {
+    float a, b, c;
 
-     cout<<"Inserisci due numeri in due input"<<endl;
+     cout<<"inserisci 2 numeri"<<endl;
           cin>>a>>b;
-     
-     while(a<=b){
-          somma=+a;
-          a++;
-          cout<<somma<<endl;
-     }
+     cout<<"\n"<<endl;
+
+    while(a<=b){
+        c=c+a;
+        a++;
+        cout<<a<<endl;
+    }
+
+    cout<<"\n"<<c<<" - Numero Sommato"<<endl;
 
     return 0;
 }
