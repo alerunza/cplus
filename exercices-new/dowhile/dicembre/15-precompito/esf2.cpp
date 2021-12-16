@@ -5,7 +5,7 @@ using namespace std;
 int main(){
     int n1,n2;
 
-    cout<<"inserisci un numero "endl;
+    cout<<"inserisci un numero "<<endl;
         cin>>n1;
 
     do{
@@ -15,5 +15,5 @@ int main(){
     }
     while(n2!=n1);
 
-    cout<<"hai inserito due volte consecutive il numero "<<n2endl;
+    cout<<"hai inserito due volte consecutive il numero "<<n2<<endl;
 }
