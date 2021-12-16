@@ -5,22 +5,20 @@ using namespace std;
 int main(){
      int sceltan;
      float n, somma, media;
-     float min, max, minp, maxp; // p = precedenti
+     float min = 1, max, copy; // copy = assume il valore dei numeri inseriti per l'if
      int contan = 0;
      
      cout<<"Inserisci quanti numeri vuoi trattare"<<endl;   
           cin>>sceltan;
-     min=sceltan;
      do{
           cout<<"Inserisci i numeri"<<endl;
                cin>>n;
-          minp=n;
-          maxp=n;
-          if(min>=minp){
-               min=minp;
+          copy=n;
+          if(min>=copy){
+               min=copy;
           }
-          if(max<=maxp){
-               max=maxp;
+          if(max<=copy){
+               max=copy;
           }
           contan++;
           somma+=n;
