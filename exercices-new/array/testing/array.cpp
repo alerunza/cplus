@@ -7,7 +7,7 @@ int main(){
      string nomi[2] = {"Simone", "Stefano"}; // 0, 1 (posti nomi/ il primo è sempre 0)
 
      cout<<nomi[0]<<endl;
-     nomi[0] = "San Giuseppe";
+     nomi[0] = "San Michele";
      cout<<nomi[0]<<endl;
      nomi[0] = "Simone";
 
