@@ -4,7 +4,6 @@ Dopo, con un ciclo while e do-while che itera finché VAR è maggiore o uguale a
 using namespace std;
 
 int main(){
-     int var = 20;
 
      for(int var = 20; var>=0; var-=2){
           cout<<var<<endl;
