@@ -14,7 +14,7 @@ int main(){
         somma+=prezzo;
      }
     
-    cout<<"Hai speso: "<<somma<<endl;   //<<"\nPer un totale di "<<numprodotto-1<<" Prodotti"<<endl;
+    cout<<"Hai speso: "<<somma<<"$"<<endl;   //<<"\nPer un totale di "<<numprodotto-1<<" Prodotti"<<endl;
     
     return 0;
 }
