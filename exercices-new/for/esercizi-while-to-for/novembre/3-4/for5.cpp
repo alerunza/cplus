@@ -10,10 +10,10 @@ int main(){
     cout<<"Inserisci un numero"<<endl;
         cin>>n;
 
-     for(int i = 0; divisore<n;){
+    for(int i = 0; divisore<n;){
           op = n % divisore;
           divisore = divisore+1;
-     }
+    }
     if(divisore == n){
         cout<<"Il numero risulta essere primo: "<<n<<endl;
     }

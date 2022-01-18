@@ -5,9 +5,9 @@ using namespace std;
 
 int main(){
      
-     float prezzo, somma;
+    float prezzo, somma;
 
-     for(int i = 0; prezzo != 0; i++){
+    for(int i = 0; prezzo != 0; i++){
         
         cout<<"Inserisci il prezzo del prodotto (Appena hai finito, digita 0) --> Numero Prodotto: "<<i<<endl;
             cin>>prezzo;
