@@ -6,7 +6,6 @@ using namespace std;
 int main(){   
     float n, somma;
 
-
      for(;somma<=20;){
         cout<<"Inserisci un numero fino ad arrivare a 20"<<endl;
             cin>>n;
