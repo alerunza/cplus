@@ -8,8 +8,7 @@ int main(){
 
     cout<<"Inserisci un numero INTERO"<<endl;
         cin>>n;
-
-
+        
      for(int conta = 1;conta<=n; conta++){
         if(conta%2==0){
             cout<<conta<<" - Pari"<<endl;
