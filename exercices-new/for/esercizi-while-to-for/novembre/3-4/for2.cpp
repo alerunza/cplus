@@ -7,10 +7,11 @@ int main(){
      
      char scelta;
 
-     for(int i = 0; scelta != 'n'; i++){
+      for(int i = 0; scelta != 'n'; i++){
           cout<<i<<endl;
           cout<<"Vuoi continuare? - N"<<endl;
                cin>>scelta;
      }
+
      cout<<"Hai terminato la successione di numeri interi"<<endl;
 }
