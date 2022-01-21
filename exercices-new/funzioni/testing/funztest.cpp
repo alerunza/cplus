@@ -18,4 +18,6 @@ int main(){
 
     somma(10, 3);
     somma(pippo, pippi);
+    differenza(10, 3);
+    prodotto(10, 3);
 }
