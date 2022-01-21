@@ -3,7 +3,7 @@
 using namespace std;
 
 class Veicolo{
-    public: 
+    public:
     string modello;
     string alimentazione;
 
@@ -13,7 +13,6 @@ class Veicolo{
 void Veicolo::anno(){
     cout<<"L'anno del veicolo e' corretto"<<endl;
 }
-
 
 int main(){
 
@@ -40,7 +39,7 @@ int main(){
         }
         cout<<"Tesla: "<<tesla.modello;
         cout<<"\nTesla Alimentazione: "<<tesla.alimentazione;
-        cout<<"\nAnno: "<<anno<<endl;
+        cout<<"\nTesla Anno: "<<anno<<endl;
     }
     if(scelta==2){
         cout<<"Inserisci l'anno del veicolo corrente"<<endl;
@@ -52,10 +51,7 @@ int main(){
         }        
         cout<<"Ferrari: "<<ferrari.modello;
         cout<<"\nFerrari Alimentazione: "<<ferrari.alimentazione;
-        cout<<"\nAnno: "<<anno<<endl;
+        cout<<"\nFerrari Anno: "<<anno<<endl;
     }
-
-    
-
 
 }
