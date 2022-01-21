@@ -51,7 +51,7 @@ int main(){
             cout<<"L'anno del veicolo non e' corretto, mi spiace ma avrai il veicolo da te desiderato"<<endl;
         }        
         cout<<"Ferrari: "<<ferrari.modello;
-        cout<<"\nTesla Alimentazione: "<<ferrari.alimentazione;
+        cout<<"\nFerrari Alimentazione: "<<ferrari.alimentazione;
         cout<<"\nAnno: "<<anno<<endl;
     }
 
