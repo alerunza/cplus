@@ -8,6 +8,11 @@ class Veicolo{
     string alimentazione;
 
     void anno();
+
+    Veicolo(string x, string y){
+        modello = x;
+        alimentazione = y;
+    }
 };
 
 void Veicolo::anno(){
@@ -16,13 +21,16 @@ void Veicolo::anno(){
 
 int main(){
 
-    Veicolo tesla;
+/*     Veicolo tesla;
     tesla.modello = "Model 3";
-    tesla.alimentazione = "Elettrico";
+    tesla.alimentazione = "Elettrico"; */
 
-    Veicolo ferrari;
+/*     Veicolo ferrari;
     ferrari.modello = "Roma";
-    ferrari.alimentazione = "Benzina";
+    ferrari.alimentazione = "Benzina"; */
+
+    Veicolo tesla("Model 3", "Elettrica");
+    Veicolo ferrari("Roma", "Benzina");   //costruttore
 
     int scelta;
     int anno;
