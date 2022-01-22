@@ -23,9 +23,9 @@ int main(){
 
 /*     Veicolo tesla;
     tesla.modello = "Model 3";
-    tesla.alimentazione = "Elettrico"; */
+    tesla.alimentazione = "Elettrico";
 
-/*     Veicolo ferrari;
+    Veicolo ferrari;
     ferrari.modello = "Roma";
     ferrari.alimentazione = "Benzina"; */
 
@@ -37,26 +37,32 @@ int main(){
 
     cout<<"Scegli il veicolo\n1 - Tesla\n2 - Ferrari"<<endl;
         cin>>scelta;
+
     if(scelta==1){
         cout<<"Inserisci l'anno del veicolo corrente"<<endl;
             cin>>anno;
+
         if(anno==2017){
             tesla.anno();
         }else{
             cout<<"L'anno del veicolo non e' corretto, mi spiace ma avrai il veicolo da te desiderato"<<endl;
         }
+
         cout<<"Tesla: "<<tesla.modello;
         cout<<"\nTesla Alimentazione: "<<tesla.alimentazione;
         cout<<"\nTesla Anno: "<<anno<<endl;
     }
+
     if(scelta==2){
         cout<<"Inserisci l'anno del veicolo corrente"<<endl;
             cin>>anno;
+            
         if(anno==2019){
             ferrari.anno();
         }else{
             cout<<"L'anno del veicolo non e' corretto, mi spiace ma avrai il veicolo da te desiderato"<<endl;
         }        
+
         cout<<"Ferrari: "<<ferrari.modello;
         cout<<"\nFerrari Alimentazione: "<<ferrari.alimentazione;
         cout<<"\nFerrari Anno: "<<anno<<endl;
