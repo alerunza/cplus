@@ -14,7 +14,7 @@ int main(){
 
     punt = &n;
     cout<<punt<<endl;
-    cout<<*punt<<endl;
+    cout<<*punt<<endl; // prende il valore della variabile "n"
 
     *punt = 19;
     cout<<&n<<endl;
