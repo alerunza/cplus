@@ -31,6 +31,7 @@ using namespace std;
 int main(){
      int array[4] = {2, 3, 8, 1};
      string nomi[4] = {"Simone", "Gero"};
+
 /*      cout<<array[3]<<endl;
      array[3] = 3;
      cout<<array[3]<<endl; */

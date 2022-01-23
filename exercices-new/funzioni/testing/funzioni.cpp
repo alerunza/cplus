@@ -7,8 +7,16 @@ void funzione(string nome){
 }
 
 int somma(int x, int y){
-    int i = x+y;
-    cout<<i<<endl;
+/*     int i = x+y;
+    cout<<i<<endl; */
+    return x+y;
+}
+
+void scambiaNum(int &x, int &y){
+    int i = x;
+    x = y;
+    y = i;
+    cout<<x<<" "<<y<<endl;
 }
 
 int main(){
@@ -22,7 +30,10 @@ int main(){
     int y = 5;
 
     funzione(nomeutente);
-    somma(x, y);
+    //somma(x, y);
+    cout<<x<<" + "<<y<<endl;
+    cout<<somma(x, y)<<endl;
+    scambiaNum(x, y);
 
     return 0;
 }
