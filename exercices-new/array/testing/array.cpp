@@ -39,7 +39,7 @@ int main(){
      for(int i = 0; i<4; i++){
           cout<<array[i]<<endl;
      } */
-     nomi[3] = "Michele";
+     nomi[2] = "Michele";
      for(int i = 0; i<4; i++){
           cout<<nomi[i]<<endl;
      }
