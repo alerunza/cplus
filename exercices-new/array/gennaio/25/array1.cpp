@@ -9,17 +9,32 @@ using namespace std;
 int main(){
 
     int n;
-    int somma;
-    int array[n];
+    float somma;
     
     cout<<"Inserisci il quantitativo di numeri da inserire successivamente"<<endl;
         cin>>n;
-    
+    if(n>=100){
+        cout<<"Non puoi aggiungere piu' di 100\nRiavvia il programma"<<endl;
+    }
+    int array[n];
     for(int i = 0; i<n; i++){
         cin>>array[i];
         somma+=array[i];
     }
-    float media = somma / n;
+    
+/*     for(int i = n; i>=0; i--){
+        cout<<array[i]<<endl; // inverso
+    } */
 
-    return 0;
+    float media = somma / n;
+    cout<<"Somma: "<<somma<<"\nMedia: "<<media<<endl;
+
+    for(int i = 0; i<n; i++){
+        if(media>=array[i]){
+            cout<<"Minore/Uguale alla media: "<<array[i]<<endl;
+        }else{
+            cout<<"Maggiore alla media: "<<array[i]<<endl;
+        }
+    }
+
 }
