@@ -8,4 +8,20 @@ using namespace std;
 
 int main(){
 
+     int n;
+     const int max = 100;
+
+     while(n%2==0 or n<=max or n>0){
+     
+     cout<<"Inserisci un numero di elementi"<<endl;
+          cin>>n;
+
+     }
+
+     int array[n];
+
+     for(int i = 0; i<n; i++){
+          cin>>array[i];
+     }
+
 }
