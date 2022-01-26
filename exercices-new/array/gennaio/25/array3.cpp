@@ -11,7 +11,7 @@ int main(){
      int n;
      const int max = 100;
 
-     while(n%2==0 or n<=max or n>0){
+     while(n%2!=0 or n>=max or n<=0){
      
      cout<<"Inserisci un numero di elementi"<<endl;
           cin>>n;
@@ -22,6 +22,14 @@ int main(){
 
      for(int i = 0; i<n; i++){
           cin>>array[i];
+     }
+     for(int i = 0; i<n; i++){
+          int temp;
+          temp = array[i];
+          array[i] = array[i];
+          array[i] = temp;
+
+          cout<<array[i]<<endl;
      }
 
 }
