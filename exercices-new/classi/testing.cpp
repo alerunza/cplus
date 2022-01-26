@@ -4,8 +4,8 @@ using namespace std;
 
 class Veicolo{
     public:
-    string modello;
-    string alimentazione;
+        string modello;
+        string alimentazione;
 
     void anno();
 
