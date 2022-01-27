@@ -12,24 +12,23 @@ int main(){
      const int max = 100;
 
      while(n%2!=0 or n>=max or n<=0){
-     
      cout<<"Inserisci un numero di elementi"<<endl;
           cin>>n;
-
      }
 
      int array[n];
 
      for(int i = 0; i<n; i++){
-          cin>>array[i];
+          cin>>array[i]; // inserire all'interno agli array
      }
-     for(int i = 0; i<n; i++){
+     for(int i = 0; i<n; i+=2){
           int temp;
           temp = array[i];
-          array[i] = array[i];
-          array[i] = temp;
-
-          cout<<array[i]<<endl;
+          array[i] = array[i+1]; // ciclo per scambiare le posizioni dei valori
+          array[i+1] = temp;
+     }
+     for(int i = 0; i<n; i++){
+          cout<<array[i]<<endl; // stampare gli array con le posizioni scambiate
      }
 
 }
