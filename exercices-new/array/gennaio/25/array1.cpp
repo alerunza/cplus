@@ -23,7 +23,7 @@ int main(){
         }
     
     /*      for(int i = n; i>=0; i--){
-            cout<<array[i]<<endl; // inverso
+            cout<<array[i]<<endl; // inverso se
         } */
 
         float media = somma / n;
