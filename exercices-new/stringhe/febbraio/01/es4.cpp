@@ -13,10 +13,12 @@ int main(){
 
     cout<<bin.length()<<endl;
     int n = bin.length();
-    float dec, dec0;
-    for(int i = 0; i<=n; i++){
-        dec0 = 1* pow(2, 0);
-        dec = dec0 + 1 * pow(2, i);
+    float dec;
+    for(int i = 0; n!=0; i++){
+        if(bin[i]=='1'){
+            dec += pow(2, n-1); //se è 1 si potrà elevare a 2, e se è -1 non si potrà elevare dato che parte 0
+        }
+        n--;
     }
     cout<<dec<<endl;
 }
