@@ -5,8 +5,8 @@ using namespace std;
 
 int main(){
 
-     string n = "ciao";
+     string x = "ciao";
 
-     cout<<n.length()<<endl;
+     cout<<x.length()<<endl;
 
 }
