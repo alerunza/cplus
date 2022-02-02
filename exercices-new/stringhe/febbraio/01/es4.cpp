@@ -11,7 +11,7 @@ int main(){
     cout<<"Inserisci un numero binario"<<endl;  
         cin>>bin;
 
-    cout<<bin.length()<<endl;
+    //cout<<bin.length()<<endl; 
     int n = bin.length();
     float dec;
     for(int i = 0; n!=0; i++){
@@ -20,5 +20,5 @@ int main(){
         }
         n--;
     }
-    cout<<dec<<endl;
+    cout<<"Finale : "<<dec<<endl;
 }
