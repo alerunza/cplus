@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(){
-    string a = "Ciao0";
+/*     string a = "Ciao0";
     string b;
     
     cout<<a<<endl;
@@ -12,5 +12,13 @@ int main(){
     
     a = "Ciao1";
     
-    cout<<a+b<<endl;
+    cout<<a+b<<endl; */
+
+    string mich = "Michele";
+    string sten = "Stefano";
+
+    cout<<mich<<" "<<sten<<endl;
+
+    mich.swap(sten);
+    cout<<mich<<" "<<sten<<endl;
 }
