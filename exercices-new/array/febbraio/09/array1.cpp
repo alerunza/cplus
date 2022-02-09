@@ -6,18 +6,17 @@ compare tra quelli caricati nel vettore, visualizzare un segnale di errore. */
 using namespace std;
 
 int main(){
-     char nomi[3] = {'A', 'S', 'P'};
-     char nome;
-     int posizione = 0;
+     string nomi[3] = {"Simone", "Gandolfo", "Stefano"};
+     string nome;
 
      cout<<"Inserisci il nome del concorrente"<<endl;
      for(int i=0; i<3; i++){
           cin>>nome;
           if(nome!=nomi[i]){
-               cout<<"Errore, nessun giocatore trovato con quel nome\ni concorrenti sono: A, S e P."<<endl;
+               cout<<"Errore, nessun giocatore trovato con quel nome\ni concorrenti sono: Simone, Gandolfo e Stefano."<<endl;
           }
           if(nome==nomi[i]){
-               cout<<nomi[i]<<" Posizione: "<<i<<endl;
+               cout<<nomi[i]<<" Posizione: "<<i+1<<endl;
           }
      }
 }
