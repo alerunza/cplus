@@ -16,11 +16,12 @@ int main(){
      cout<<"Inserisci i voti "<<voti<<" volte"<<endl;
      for(int i = 0; i<voti; i++){
           cin>>array[i];
+     }
+     
+     for(int i = 0; i<voti; i++){
           if(array[i]>=6){
                sufficienti[i]=array[i];
+               cout<<"Voti sufficienti: "<<sufficienti[i]<<endl;
           }
-     }
-     for(int i = 0; i<voti; i++){
-          cout<<"Voti sufficienti: "<<sufficienti[i]<<endl;
      }
 }
