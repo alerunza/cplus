@@ -5,38 +5,31 @@ Stampare l'elenco dei maggiorenni (cognome, nome, età ed indice). */
 using namespace std;
 
 int main(){
-    int a;
-    cout<<"quanti elementi vuoi inserire"<<endl;
-        cin>>a;
-    int n[a];
-    string nome[a];
-    string cognome[a];
-    string cognomer;
-    int i=0,c=0;        
-    for(int i=0;i<a;i++){
-        cout<<"Inserire il nome"<<endl;
+    int numero;
+
+    cout<<"Inserisci gli ELEMENTI per i vettori paralleli"<<endl;
+        cin>>numero;
+
+    int eta[numero];
+    string nome[numero];
+    string cognome[numero];
+    int i = 0;
+
+    for(i = 0; i<numero; i++){
+        cout<<"Inserisci il NOME"<<endl;
             cin>>nome[i];
 
-        cout<<"Inserire il cognome"<<endl;
+        cout<<"Inserisci il COGNOME"<<endl;
             cin>>cognome[i];
 
-        cout<<"Inserire il codice"<<endl;
-            cin>>n[i];
+        cout<<"Inserisci l'ETA'"<<endl;
+            cin>>eta[i];
     }
 
-    cout<<"Quale cognome vuoi cercare?"<<endl;
-        cin>>cognomer;
-
-    for(i = 0; i<a; i++){
-        if(cognomer==cognome[i]){
-            cout<<"Il cognome "<<cognomer<<" si  trova in "<<i+1<<" posizione"<<endl;
-            cout<<"il nome e' "<<nome[i]<<endl;
-            c++;
+    for(i = 0; i<numero; i++){
+        if(eta[i]>17){
+            cout<<"COGNOME: "<<cognome[i]<<"\nNOME: "<<nome[i]<<"\nETA': "<<eta[i]<<"\nINDICE: "<<i<<endl;
         }
-    }
-    if(c==0){
-        cout<<"ERRORE!!!"<<endl;
-        cout<<"il cognome "<<cognomer<<" non e' nell' elenco"<<endl;
     }
     return 0;
 }
