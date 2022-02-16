@@ -1,5 +1,5 @@
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 /* Dati N elementi scelti da tastiera, caricare tre vettori paralleli con nome, cognome ed età.
 Stampare l'elenco dei maggiorenni (cognome, nome, età ed indice). */
 using namespace std;
