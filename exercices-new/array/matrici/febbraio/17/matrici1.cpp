@@ -27,7 +27,7 @@ int main(){
 
      }
 
-     cout<<"la SOMMA tra le colonne e le righe: "<<sommatutto<<endl;
+     cout<<"la SOMMA tra le colonne e le righe: "<<sommma<<endl;
      
      return 0;
 }
