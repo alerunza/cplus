@@ -23,8 +23,8 @@ int main(){
     if( file.is_open() ){
         
         cout<<"Inserisci il NOME"<<endl;
-            cin.ignore(); // so cin will work
-	        getline(cin, nome); //takes in the line b/c it may be more than one word
+            cin.ignore();
+	        getline(cin, nome);
         file.close();
     }   
 

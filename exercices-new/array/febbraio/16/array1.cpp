@@ -25,7 +25,7 @@ int main(){
         cout<<"Inserisci l'ETA'"<<endl;
             cin>>eta[i];
     }
-
+    
     for(i = 0; i<numero; i++){
         if(eta[i]>17){
             cout<<"COGNOME: "<<cognome[i]<<"\nNOME: "<<nome[i]<<"\nETA': "<<eta[i]<<"\nINDICE: "<<i<<endl;
