@@ -4,8 +4,8 @@ using namespace std;
 
 int main(){
      //tipoVariabile nomeMatrice [numeroRighe][numeroColonne];
-     int r ,c;
-     int i , j;
+     int r, c;
+     int i, j;
      cout<<"Inserisci due numeri prima le colonne e poi righe "<<endl;
           cin>>r>>c;
 
