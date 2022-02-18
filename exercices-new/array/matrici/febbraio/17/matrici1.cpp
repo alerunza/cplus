@@ -16,7 +16,7 @@ int main(){
      int matrice[r][c];
      for(i = 0 ; i < r ; i++ ){
           sommarighe = 0;
-         sommacolonne = 0;
+          sommacolonne = 0;
           for(j = 0 ; j < c ; j++){
                cout<<"Inserisci i numeri all'interno della matrice"<<endl;
                     cin>>matrice[i][j];
