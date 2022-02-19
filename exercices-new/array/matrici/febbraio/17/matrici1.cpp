@@ -7,7 +7,7 @@ using namespace std;
 
 int main(){
      //tipoVariabile nomeMatrice [numeroRighe][numeroColonne];
-     int sommatutto, sommarighe, sommacolonne;
+     int sommatutto = 0, sommarighe, sommacolonne;
      int r, c; // r = righe; c = colonne
      int i, j; // i = n.righe; j = n.colonne
      cout<<"Inserisci due numeri prima le colonne e poi righe"<<endl;
@@ -33,7 +33,6 @@ int main(){
           for(j = 0 ; j < c ; j++){
                sommarighe += matrice[i][j]; //1- il totale per ogni riga della matrice
           }
-          //cout<<endl;
           cout<<"la SOMMA delle righe della MATRICE: "<<sommarighe<<endl;
      }
 
@@ -44,6 +43,6 @@ int main(){
           }
           cout<<"la SOMMA delle colonne della MATRICE: "<<sommacolonne<<endl;
      }
-
+     
      return 0;
 }
