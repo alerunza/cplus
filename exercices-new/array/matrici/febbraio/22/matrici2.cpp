@@ -15,20 +15,19 @@ int main(){
                 cin>>matrice[i][j];
         }
     }
-    
+    cout<<"Incassi registrati: "<<endl;
     for(i = 0 ; i < 20 ; i++ ){
         for(j = 0 ; j < 6 ; j++){
-            cout<<"Incassi registrati: "<<endl;
             cout<<matrice[i][j]<<"\t";   //stampa l'intera matrice
         }
         cout<<endl;
     }
+    somma = 0;
     for(i = 0 ; i < 20 ; i++ ){
-        somma = 0;
+        
         for(j = 0 ; j < 4 ; j++){    //calcolo totale degli incassi del 4 giorno
             somma += matrice[i][j];
         }
-        cout<<endl;
     }
     cout<<somma<<endl;
 }
