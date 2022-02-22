@@ -32,6 +32,7 @@ int main(){
           sommarighe = 0;
           for(j = 0 ; j < c ; j++){
                sommarighe += matrice[i][j]; //1- il totale per ogni riga della matrice
+               sommatutto += matrice[i][j];
           }
           cout<<"la SOMMA delle righe della MATRICE: "<<sommarighe<<endl;
      }
@@ -40,9 +41,17 @@ int main(){
           sommacolonne = 0;
           for(j = 0 ; j < c ; j++){
                sommacolonne += matrice[j][i]; //2- il totale per ogni colonna della matrice
+               sommatutto += matrice[j][i];
           }
           cout<<"la SOMMA delle colonne della MATRICE: "<<sommacolonne<<endl;
      }
+     sommatutto = 0;
+     for(i = 0 ; i < r ; i++ ){ // somma totale
+          for(j = 0 ; j < c ; j++){
+               sommatutto += matrice[i][j]; //3- la somma di ogni elemento della matrice
+          }
+     }
+      cout<<"la SOMMA di tutta la MATRICE: "<<sommatutto<<endl;
      
      return 0;
 }
