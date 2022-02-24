@@ -31,8 +31,8 @@ int main(){
         cout<<endl;
     }
     
+    max = matrice[0][0];
     for(i = 0 ; i < r ; i++ ){
-        max = matrice[0][0];
         for(j = 0 ; j < c ; j++){     //1- il massimo degli elementi di ciascuna riga della matrice
             if(matrice[i][j]>max){
                 max = matrice[i][j];
@@ -41,8 +41,8 @@ int main(){
         cout<<"Il MASSIMO della MATRICE di ogni riga: "<<max<<endl;
     }
     
+    min = matrice[0][0];
     for(i = 0 ; i < r ; i++ ){
-        min = matrice[0][0];
         for(j = 0 ; j < c ; j++){     //2- il minimo di tutti gli elementi della matrice
             if(matrice[i][j]<min){
                 min = matrice[i][j];
