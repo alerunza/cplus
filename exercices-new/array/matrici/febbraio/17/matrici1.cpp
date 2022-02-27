@@ -48,7 +48,7 @@ int main(){
      
      for(i = 0 ; i < r ; i++ ){ // somma totale
           for(j = 0 ; j < r ; j++){
-               sommatutto += matrice[i][j]; //3- la somma di ogni elemento della matrice
+               sommatutto += matrice[j][i]; //3- la somma di ogni elemento della matrice
           }
      }
      cout<<"la SOMMA di tutta la MATRICE: "<<sommatutto<<endl;
