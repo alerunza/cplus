@@ -48,9 +48,9 @@ int main(){
                 min = matrice[i][j];
             }  
         }
-        cout<<"Il MINIMO della MATRICE di ogni riga: "<<min<<endl;
     }
     
+    cout<<"Il MINIMO di tutta la MATRICE: "<<min<<endl;
     for(i = 0 ; i < r ; i++ ){
         somma = 0;
         media = 0;
