@@ -11,35 +11,35 @@ int main(){
      int r, c; // r = righe; c = colonne
      int i, j; // i = n.righe; j = n.colonne
      cout<<"Inserisci due numeri prima le colonne e poi righe"<<endl;
-          cin>>r>>c;
+          cin>>r;
 
-     int matrice[r][c];
+     int matrice[r][r];
      for(i = 0 ; i < r ; i++ ){
-          for(j = 0 ; j < c ; j++){
+          for(j = 0 ; j < r ; j++){
                cout<<"Inserisci i numeri all'interno della matrice"<<endl;
                     cin>>matrice[i][j];
           }
      }
      
      for(i = 0 ; i < r ; i++ ){
-          for(j = 0 ; j < c ; j++){
+          for(j = 0 ; j < r ; j++){
                cout<<matrice[i][j]<<"\t";   //stampa l'intera matrice
           }
           cout<<endl;
      }
 
+     sommarighe = 0;
      for(i = 0 ; i < r ; i++ ){ // somma righe
-          sommarighe = 0;
-          for(j = 0 ; j < c ; j++){
+          for(j = 0 ; j < r ; j++){
                sommarighe += matrice[i][j]; //1- il totale per ogni riga della matrice
                sommatutto += matrice[i][j];
           }
           cout<<"la SOMMA delle righe della MATRICE: "<<sommarighe<<endl;
      }
 
+     sommacolonne = 0;
      for(i = 0 ; i < r ; i++ ){ // somma colonne
-          sommacolonne = 0;
-          for(j = 0 ; j < c ; j++){
+          for(j = 0 ; j < r ; j++){
                sommacolonne += matrice[j][i]; //2- il totale per ogni colonna della matrice
                sommatutto += matrice[j][i];
           }
@@ -47,7 +47,7 @@ int main(){
      }
      sommatutto = 0;
      for(i = 0 ; i < r ; i++ ){ // somma totale
-          for(j = 0 ; j < c ; j++){
+          for(j = 0 ; j < r ; j++){
                sommatutto += matrice[i][j]; //3- la somma di ogni elemento della matrice
           }
      }
