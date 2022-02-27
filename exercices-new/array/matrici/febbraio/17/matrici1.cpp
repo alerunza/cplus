@@ -41,17 +41,17 @@ int main(){
           sommacolonne = 0;
           for(j = 0 ; j < r ; j++){
                sommacolonne += matrice[j][i]; //2- il totale per ogni colonna della matrice
-               sommatutto += matrice[j][i];
+               /* sommatutto += matrice[j][i]; */
           }
           cout<<"la SOMMA delle colonne della MATRICE: "<<sommacolonne<<endl;
      }
-     sommatutto = 0;
+     
      for(i = 0 ; i < r ; i++ ){ // somma totale
           for(j = 0 ; j < r ; j++){
                sommatutto += matrice[i][j]; //3- la somma di ogni elemento della matrice
           }
      }
-      cout<<"la SOMMA di tutta la MATRICE: "<<sommatutto<<endl;
+     cout<<"la SOMMA di tutta la MATRICE: "<<sommatutto<<endl;
      
      return 0;
 }
