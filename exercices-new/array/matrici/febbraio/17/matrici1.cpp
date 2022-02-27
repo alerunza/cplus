@@ -28,17 +28,17 @@ int main(){
           cout<<endl;
      }
 
-     sommarighe = 0;
      for(i = 0 ; i < r ; i++ ){ // somma righe
+          sommarighe = 0;
           for(j = 0 ; j < r ; j++){
                sommarighe += matrice[i][j]; //1- il totale per ogni riga della matrice
                sommatutto += matrice[i][j];
           }
           cout<<"la SOMMA delle righe della MATRICE: "<<sommarighe<<endl;
      }
-
-     sommacolonne = 0;
+     
      for(i = 0 ; i < r ; i++ ){ // somma colonne
+          sommacolonne = 0;
           for(j = 0 ; j < r ; j++){
                sommacolonne += matrice[j][i]; //2- il totale per ogni colonna della matrice
                sommatutto += matrice[j][i];
