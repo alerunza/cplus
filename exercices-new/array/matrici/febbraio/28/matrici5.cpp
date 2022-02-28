@@ -6,12 +6,17 @@ using namespace std;
 
 int main(){
     int studente[6]; // 6 = 6 mesi
-
+    
     cout<<"Inserisci per ogni mese (6), il numero di assenze che ha fatto in quel mese"<<endl;
     for(int i = 0; i < 6; i++){
         cin>>studente[i];
     }
+    int max = 0, mese;
     for(int i = 0; i < 6; i++){
-        if(studente[i]>)
+        if(studente[i]>max){
+            max = studente[i];
+            mese = i;
+        }
     }
+    cout<<"Lo studente nel mese numero: "<<mese+1<<" ha effettuato: "<<max<<endl;
 }
