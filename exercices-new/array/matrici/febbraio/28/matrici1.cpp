@@ -6,6 +6,7 @@ using namespace std;
 int main(){
     int matrice[10][10];
     int i, j;
+    int rigaindice, colindice;
 
     cout<<"Inserisci gli elementi all'interno della matrice"<<endl;
     for(i = 0; i < 10; i++){// inserimento della matrice
@@ -24,9 +25,29 @@ int main(){
     for(i = 0; i < 10; i++){
         for(j = 0; j < 10; j++){
             if(matrice[i][j]>max){
-                max = matrice[i][j];    
+                max = matrice[i][j];  
+                rigaindice = i;
+                colindice = j;
             }
         }
-        cout<<endl;
     }
+
+    cout<<"Indice MASSIMO (Riga) "<<rigaindice+1<<endl;
+    cout<<"Indice MASSIMO (Colonna) "<<colindice+1<<endl;
+    cout<<"Il MASSIMO della MATRICE e': "<<max<<endl;
+    
+    min = matrice[0][0];
+    for(i = 0; i < 10; i++){
+        for(j = 0; j < 10; j++){
+            if(matrice[i][j]<min){
+                min = matrice[i][j];
+                rigaindice = i;
+                colindice = j;
+            }
+        }
+    }
+
+    cout<<"Indice MINIMO (Riga) "<<rigaindice+1<<endl;
+    cout<<"Indice MINIMO (Colonna) "<<colindice+1<<endl;
+    cout<<"Il MINIMO della MATRICE e': "<<min<<endl;
 }
