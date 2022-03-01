@@ -42,7 +42,6 @@ int main(){
         sommarighe = 0;
         for(j = 0; j < M; j++){
             sommarighe += A[i][j];
-            maxriga = i+1;
         }
         cout<<sommarighe<<"\t";
     }
@@ -53,7 +52,6 @@ int main(){
         sommacolonne = 0;
         for(j = 0; j < M; j++){
             sommacolonne += A[j][i];
-            mincol = j+1;
         }
         cout<<sommacolonne<<"\t";
     }
