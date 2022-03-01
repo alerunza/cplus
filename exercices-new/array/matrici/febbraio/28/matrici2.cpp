@@ -21,5 +21,29 @@ int main(){
     int N = 4;
     int M = 4;
     int A[N][M];
+    int i, j;
+    int sommarighe, sommacolonne;
+
+    cout<<"Inserisci gli elementi già determinati"<<endl;
+    for(i = 0; i < N; i++){ // inserire elementi all'interno della matrice
+        for(j = 0; j < M; j++){
+            cin>>A[i][j];
+        }
+    }
+    for(i = 0; i < N; i++){ // stampa matrice
+        for(j = 0; j < M; j++){
+            cout<<A[i][j]<<"\t";
+        }
+        cout<<endl;
+    }
+    
+    cout<<"Somma RIGHE: "<<endl;
+    for(i = 0; i < N; i++){ // somma righe matrice
+        sommarighe = 0;
+        for(j = 0; j < M; j++){
+            sommarighe += A[i][j];
+        }
+        cout<<sommarighe<<"\t";
+    }
     
 }
