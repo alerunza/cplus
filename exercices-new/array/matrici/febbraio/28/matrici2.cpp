@@ -46,4 +46,12 @@ int main(){
         cout<<sommarighe<<"\t";
     }
     
+    cout<<"Somma COLONNE: "<<endl;
+    for(i = 0; i < N; i++){ // somma colonne matrice
+        sommacolonne = 0;
+        for(j = 0; j < M; j++){
+            sommacolonne += A[j][i];
+        }
+        cout<<sommacolonne<<"\t";
+    }
 }
