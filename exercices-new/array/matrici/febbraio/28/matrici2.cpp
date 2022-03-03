@@ -24,7 +24,7 @@ int main(){
     int i, j;
     int sommarighe, sommacolonne;
 
-    cout<<"Inserisci gli elementi già determinati"<<endl;
+    cout<<"Inserisci gli elementi gia' determinati"<<endl;
     for(i = 0; i < N; i++){ // inserire elementi all'interno della matrice
         for(j = 0; j < M; j++){
             cin>>A[i][j];
@@ -36,7 +36,7 @@ int main(){
         }
         cout<<endl;
     }
-    
+
     cout<<"Somma RIGHE: "<<endl;
     for(i = 0; i < N; i++){ // somma righe matrice
         sommarighe = 0;
@@ -45,7 +45,8 @@ int main(){
         }
         cout<<sommarighe<<"\t";
     }
-    
+
+    cout<<endl;
     cout<<"Somma COLONNE: "<<endl;
     for(i = 0; i < N; i++){ // somma colonne matrice
         sommacolonne = 0;
