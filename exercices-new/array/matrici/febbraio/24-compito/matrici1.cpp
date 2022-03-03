@@ -141,16 +141,16 @@ int main(){
           media[2] = somma[2] / nmedia;
      }
      cout<<endl;
-     cout<<"Il MASSIMO della 1° MATRICE: "<<max[0]<<endl;
-     cout<<"Il MINIMO della 1° MATRICE: "<<min[0]<<endl;
-     cout<<"La MEDIA della 1° MATRICE: "<<media[0]<<endl;
-     cout<<"La SOMMA della 1° MATRICE: "<<somma[0]<<endl;
-     cout<<"Il MASSIMO della 2° MATRICE: "<<max[1]<<endl;
-     cout<<"Il MINIMO della 2° MATRICE: "<<min[1]<<endl;
-     cout<<"La MEDIA della 2° MATRICE: "<<media[1]<<endl;
-     cout<<"La SOMMA della 2° MATRICE: "<<somma[1]<<endl;
-     cout<<"Il MASSIMO della 3° MATRICE: "<<max[2]<<endl;
-     cout<<"Il MINIMO della 3° MATRICE: "<<min[2]<<endl;
-     cout<<"La MEDIA della 3° MATRICE: "<<media[2]<<endl;
-     cout<<"La SOMMA della 3° MATRICE: "<<somma[2]<<endl;
+     cout<<"Il MASSIMO della prima MATRICE: "<<max[0]<<endl;
+     cout<<"Il MINIMO della prima MATRICE: "<<min[0]<<endl;
+     cout<<"La MEDIA della prima MATRICE: "<<media[0]<<endl;
+     cout<<"La SOMMA della prima MATRICE: "<<somma[0]<<endl;
+     cout<<"Il MASSIMO della seconda MATRICE: "<<max[1]<<endl;
+     cout<<"Il MINIMO della seconda MATRICE: "<<min[1]<<endl;
+     cout<<"La MEDIA della seconda MATRICE: "<<media[1]<<endl;
+     cout<<"La SOMMA della seconda MATRICE: "<<somma[1]<<endl;
+     cout<<"Il MASSIMO della terza MATRICE: "<<max[2]<<endl;
+     cout<<"Il MINIMO della terza MATRICE: "<<min[2]<<endl;
+     cout<<"La MEDIA della terza MATRICE: "<<media[2]<<endl;
+     cout<<"La SOMMA della terza MATRICE: "<<somma[2]<<endl;
 }
