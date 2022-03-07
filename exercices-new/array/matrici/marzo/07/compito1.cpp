@@ -2,31 +2,27 @@
 
 using namespace std;
 
-int main (){
-     int matrice [3][7];
-     int i, j;  
-     for(i = 0; i < 3; i++){        
-          for(j = 0; j < 7; j++){
-               cout<<"inserisci il numero "<<i+1<<" citta"<<endl;
-                    cin>>matrice[i][j];
-          }         
+int main(){
+     int n;
+     int minore = 0;
+     int maggiore = 0;
+     cout<<"Inserisci il numero di persone"<<endl;
+          cin>>n;
+     
+     int eta[n];
+
+     for(int i = 0; i<n; i++){
+          cin>>eta[i];
      }
-     for(i = 0; i < 3; i++){        
-          for(j = 0; j < 7; j++){
-               cout<<matrice[i][j]<<"\t"; 
+     for(int i = 0; i<n; i++){
+          if(eta[i]<=12){
+               cout<<"Prezzo ridotto per eta': "<<eta[i]<<endl;
+               minore++;
+          }else{
+               cout<<"Prezzo normale per eta': "<<eta[i]<<endl;
+               maggiore++;
           }
-          cout<<endl;
      }
 
-     int max;
-     max = matrice[0][5]; // 5 perché inizia da 0 e se mettessimo 6 (sarebbe 7)
-     for(i = 0 ; i < 3 ; i++ ){
-          for(j = 0 ; j < 6 ; j++){
-               if(matrice[i][5]>max){
-                    max = matrice[i][5];
-               }
-          }
-     }
-     
-     cout<<"Il massimo e' "<<max<<endl;
+     cout<<"I biglietti ridotti sono: "<<minore<<"\nI biglietti normali sono: "<<maggiore<<endl;
 }
