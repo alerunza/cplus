@@ -4,7 +4,8 @@ using namespace std;
 
 int main (){
      int matrice [3][7];
-     int i, j;  
+     int i, j;
+     
      for(i = 0; i < 3; i++){        
           for(j = 0; j < 7; j++){
                cout<<"inserisci il numero "<<i+1<<" citta"<<endl;
