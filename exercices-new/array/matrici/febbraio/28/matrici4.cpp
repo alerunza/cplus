@@ -22,11 +22,10 @@ int main(){
         }
         cout<<endl;
     }
+
     somma = 0;
     for(i = 0 ; i < 20 ; i++ ){
-        for(j = 0 ; j < 4 ; j++){    //calcolo totale degli incassi del 4 giorno
-            somma += matrice[i][j];
-        }
+        somma += matrice[i][3]; // 3 dato che è il 4 giorno
     }
     cout<<somma<<endl;
 }
