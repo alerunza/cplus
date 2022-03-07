@@ -22,10 +22,8 @@ int main (){
      int max;
      max = matrice[0][5]; // 5 perché inizia da 0 e se mettessimo 6 (sarebbe 7)
      for(i = 0 ; i < 3 ; i++ ){
-          for(j = 0 ; j < 6 ; j++){
-               if(matrice[i][5]>max){
-                    max = matrice[i][5];
-               }
+          if(matrice[i][5]>max){
+               max = matrice[i][5];
           }
      }
      
