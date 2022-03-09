@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){     
-     string tabella[5][5] = {"Nome", "Cognome", "Matematica", "Italiano", "Inglese"}; 
+     string tabella[5][5] = {"Nome", "Cognome", "MAT", "ITA", "ENG"}; 
 
      cout<<"Inserisci NOME e COGNOME degli alunni"<<endl;
      for(int i = 1; i < 5; i++){
