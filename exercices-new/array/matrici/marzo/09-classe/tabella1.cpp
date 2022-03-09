@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){     
-     string tabella[5][5] = {"Nome", "Cognome", "Matematica", "Italiano", "Inglese", "Informatica"}; 
+     string tabella[5][5] = {"Nome", "Cognome", "Matematica", "Italiano", "Inglese"}; 
 
      cout<<"Inserisci NOME e COGNOME degli alunni"<<endl;
      for(int i = 1; i < 5; i++){
@@ -13,7 +13,7 @@ int main(){
      }
      for(int i = 1; i < 5; i++){
           for(int j = 2; j < 5; j++){
-               cout<<"Inserisci il voto di "<<tabella[i][j-2]<<" "<<tabella[i][j-1]<<endl;
+               cout<<"Inserisci il VOTO di "<<tabella[i][0]<<" "<<tabella[i][1]<<endl;
                     cin>>tabella[i][j];
           }
      }
