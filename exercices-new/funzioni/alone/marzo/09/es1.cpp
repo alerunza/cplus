@@ -1,5 +1,5 @@
 #include <iostream>
-
+/* Creare una funzione che calcola e restituisce il valore assoluto di un numero intero. */
 using namespace std;
 
 int valass(int x){
