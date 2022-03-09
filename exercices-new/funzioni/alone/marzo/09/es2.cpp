@@ -5,6 +5,14 @@ Creare poi un programma che si faccia passare due quantità di tempo e
 verifichi quale è maggiore utilizzando la funzione precedente e solamente due if nel programmaa. */
 using namespace std;
 
-int main(){
+void tempoinsec(){
+    int ore, minuti, secondi;
+    cout<<"Inserisci ore, minuti e secondi"<<endl;
+        cin>>ore>>minuti>>secondi;
+    int totale = ore*3600 + minuti*60 + secondi;
+    cout<<"Totale in secondi: "<<totale<<endl;
+}
 
+int main(){
+    tempoinsec();
 }
