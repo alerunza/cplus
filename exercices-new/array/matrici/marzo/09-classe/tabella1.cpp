@@ -29,14 +29,15 @@ int main(){
      
      float voti[3] = {0};
      float media[3] = {0};
-     for(int i = 1; i < 5; i++){
-          voti[0] += stoi(tabella[i][2]);
-          voti[1] += stoi(tabella[i][3]);
-          voti[2] += stoi(tabella[i][4]);
+     for(int j = 2, x = 0; x < 3; x++, j++){
+          for(int i = 1; i < 5; i++){
+               voti[x] += stoi(tabella[i][j]);
+          }
      }
-     media[0] = voti[0] / 4;
-     media[1] = voti[1] / 4;
-     media[2] = voti[2] / 4;
+     for(int i = 0; i < 3; i++){
+          media[i] = voti[i] / 4;
+     }
+     
      cout<<"la MEDIA della classe di ITALIANO e' "<<media[0]<<endl;
      cout<<"la MEDIA della classe di MATEMATICA e' "<<media[1]<<endl;
      cout<<"la MEDIA della classe di INGLESE e' "<<media[2]<<endl;
