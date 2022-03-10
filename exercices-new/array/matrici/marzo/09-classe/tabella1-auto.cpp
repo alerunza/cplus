@@ -12,11 +12,15 @@ int main(){
      cout<<"Inserisci il NUMERO di ALUNNI da inserire"<<endl;
           cin>>alunni;
      
-     string tabella[alunni+1][materie+2] = {"Nome", "Cognome"}; 
+     string tabella[alunni+1][materie+2];
+     
+     tabella[0][0] = "Nome";
+     tabella[0][1] = "Cognome";
 
      cout<<"Inserisci le MATERIE"<<endl;
-     for(int i = 2; i < materie; i++){
+     for(int i = 2; i < materie+2; i++){
           cin>>tabella[0][i];
+          
      }
 
      cout<<"Inserisci NOME e COGNOME degli alunni"<<endl;
@@ -38,8 +42,8 @@ int main(){
           cout<<endl;
      }
      
-     float voti[materie] = {0};
-     float media[materie] = {0};
+     float voti[materie];
+     float media[materie];
      for(int j = 2, x = 0; x < materie; x++, j++){
           for(int i = 1; i < alunni+1; i++){
                voti[x] += stoi(tabella[i][j]);
