@@ -20,7 +20,6 @@ int main(){
      cout<<"Inserisci le MATERIE"<<endl;
      for(int i = 2; i < materie+2; i++){
           cin>>tabella[0][i];
-          
      }
 
      cout<<"Inserisci NOME e COGNOME degli alunni"<<endl;
@@ -44,13 +43,13 @@ int main(){
      
      float voti[materie];
      float media[materie];
-     for(int j = 2, x = 0; x < materie; x++, j++){
-          for(int i = 1; i < alunni+1; i++){
-               voti[x] += stoi(tabella[i][j]);
+     for(int j = 1, x = 0; x < materie; x++, j++){
+          for(int i = 2; i < alunni+1; i++){
+               voti[x] += stoi(tabella[j][i]);
           }
      }
-     for(int i = 0, x = 2; i < materie; x++, i++){
+     for(int i = 0, x = 1; i < materie; x++, i++){
           media[i] = voti[i] / materie;
-          cout<<"la MEDIA della classe di "<<tabella[0][x]<<" e' "<<media[i]<<endl;
+          cout<<"la MEDIA di "<<tabella[x][0]<<" "<<tabella[x][1]<<" e' "<<media[i]<<endl;
      }
 }
