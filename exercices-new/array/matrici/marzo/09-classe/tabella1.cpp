@@ -16,7 +16,7 @@ int main(){
      }
      for(int i = 1; i < 5; i++){
           for(int j = 2; j < 5; j++){
-               cout<<"Inserisci il VOTO di "<<tabella[i][0]<<" "<<tabella[i][1]<<endl;
+               cout<<"Inserisci il VOTO di "<<tabella[i][0]<<" "<<tabella[i][1]<<" della MATERIA: "<<tabella[0][j]<<endl;
                     cin>>tabella[i][j];
           }
      }
@@ -37,7 +37,7 @@ int main(){
      for(int i = 0; i < 3; i++){
           media[i] = voti[i] / 4;
      }
-     
+
      cout<<"la MEDIA della classe di ITALIANO e' "<<media[0]<<endl;
      cout<<"la MEDIA della classe di MATEMATICA e' "<<media[1]<<endl;
      cout<<"la MEDIA della classe di INGLESE e' "<<media[2]<<endl;
