@@ -6,7 +6,7 @@
 using namespace std;
 
 int main(){     
-     int materie, alunni;
+     int materie = 0, alunni = 0;
      cout<<"Inserisci il NUMERO di MATERIE da inserire"<<endl;
           cin>>materie;
      cout<<"Inserisci il NUMERO di ALUNNI da inserire"<<endl;
@@ -25,31 +25,28 @@ int main(){
                cin>>tabella[i][j];
           }
      }
-     for(int i = 1; i < 5; i++){
-          for(int j = 2; j < 5; j++){
+     for(int i = 1; i < alunni+1; i++){
+          for(int j = 2; j < materie+2; j++){
                cout<<"Inserisci il VOTO di "<<tabella[i][0]<<" "<<tabella[i][1]<<" della MATERIA: "<<tabella[0][j]<<endl;
                     cin>>tabella[i][j];
           }
      }
-     for(int i = 0; i < 5; i++){
-          for(int j = 0; j < 5; j++){
+     for(int i = 0; i < alunni+1; i++){
+          for(int j = 0; j < materie+2; j++){
                cout<<tabella[i][j]<<"\t";
           }
           cout<<endl;
      }
      
-     float voti[3] = {0};
-     float media[3] = {0};
-     for(int j = 2, x = 0; x < 3; x++, j++){
-          for(int i = 1; i < 5; i++){
+     float voti[materie] = {0};
+     float media[materie] = {0};
+     for(int j = 2, x = 0; x < materie; x++, j++){
+          for(int i = 1; i < alunni+1; i++){
                voti[x] += stoi(tabella[i][j]);
           }
      }
-     for(int i = 0; i < 3; i++){
-          media[i] = voti[i] / 4;
+     for(int i = 0, x = 2; i < materie; x++, i++){
+          media[i] = voti[i] / materie;
+          cout<<"la MEDIA della classe di "<<tabella[0][x]<<" e' "<<media[i]<<endl;
      }
-
-     cout<<"la MEDIA della classe di ITALIANO e' "<<media[0]<<endl;
-     cout<<"la MEDIA della classe di MATEMATICA e' "<<media[1]<<endl;
-     cout<<"la MEDIA della classe di INGLESE e' "<<media[2]<<endl;
 }
