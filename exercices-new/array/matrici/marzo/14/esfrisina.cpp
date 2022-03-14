@@ -28,7 +28,7 @@ int main() {
 
     for(int i=0; i<c; i++){
         for(int j=0;j<r; j++){
-            Matrice2[j][i]=Matrice[i][j];
+            Matrice2[i][j]=Matrice[i][j];
         }
     }
     for(int i=0; i<c; i++){
