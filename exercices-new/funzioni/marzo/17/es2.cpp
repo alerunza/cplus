@@ -27,6 +27,6 @@ int main(){
 
     cout<<"Inserisci 3 numeri"<<endl;
         cin>>a>>b>>c;
-
+ 
     ordine(a, b, c);
 }
