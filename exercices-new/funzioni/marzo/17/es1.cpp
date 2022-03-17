@@ -6,7 +6,7 @@ Si devono implementare le seguenti funzioni:
 carica_vettore  che inserisce gli elementi all’interno
 dell’array;
 stampa_vettore che visualizza a
-monitor gli elementi inseriti. */
+monitor gli elementi inseriti.  */
 using namespace std;
 
 int array[5];
