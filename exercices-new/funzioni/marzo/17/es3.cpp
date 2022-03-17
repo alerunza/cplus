@@ -18,7 +18,7 @@ void eqsecgrado(float a, float b, float c){
 int main(){
     cout<<"Inserisci un Equazione di SECONDO Grado"<<endl;
         cin>>a>>b>>c;
-
+ 
     eqsecgrado(a, b, c);
     
     return 0;
