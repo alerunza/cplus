@@ -1,5 +1,12 @@
 #include <iostream>
-
+/* Scrivi un programma in C++ che
+permetta di visualizzare tutti gli elementi di un vettore.
+Suggerimento:
+Si devono implementare le seguenti funzioni:
+carica_vettore  che inserisce gli elementi all’interno
+dell’array;
+stampa_vettore che visualizza a
+monitor gli elementi inseriti. */
 using namespace std;
 
 int array[5];
