@@ -24,7 +24,7 @@ int main(){
 
 float eqsecgrado(float a, float b, float c){
     float x1; // dichiarazione di variabili locali
-
+ 
     x1 = (-b - sqrt ((b*b) - 4*a*c))/(2*a); // procedimento per la risoluzione dell'equazione di sec grado.
 
     return x1;
