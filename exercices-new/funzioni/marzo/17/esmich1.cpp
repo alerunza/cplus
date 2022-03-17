@@ -19,4 +19,5 @@ int main (){
     carica();
     cout << " STAMPA " <<"\n";
     stampa();
+    
 }
