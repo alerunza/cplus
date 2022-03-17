@@ -3,7 +3,6 @@
 using namespace std;
 
 void ordine(int x, int y, int z){
-    
     if(x<y){
         if(x<z){
             if(y<z){
