@@ -23,7 +23,7 @@ void stampa_vettore(){
 }
 
 int main(){
-    //carica array
+    //carica array 
     carica_vettore();
     //stampa array
     stampa_vettore();
