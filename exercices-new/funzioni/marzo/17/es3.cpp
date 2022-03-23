@@ -25,7 +25,6 @@ void eqsecgrado(float a, float b, float c){
         cout<<"Le soluzioni sono identiche: "<<x1<<" "<<x2<<endl;
     }
 
-
 }
 
 int main(){
