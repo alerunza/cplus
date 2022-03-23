@@ -3,33 +3,46 @@
 su un secondo vettore in maniera inversa. Devono essere presenti le seguenti funzioni: carica, inverti stampa. */
 using namespace std;
 
-int array[5];
-int array_inverso[5];
+int temp;
+int i, y;
 
-void carica_vettore(){
-    cout<<"Inserisci 5 NUMERI"<<endl;
-    for(int i = 0; i < 5; i++){
+void carica_vettore(int array[], int dimensione){
+    cout<<"Inserisci "<<dimensione<<" NUMERI"<<endl;
+    for(i = 0; i < dimensione; i++){
         cin>>array[i];
     }
 }
 
-void stampa_vettore(){
-    cout<<"VETTORE Stampato: "<<endl;
-    for(int i = 0; i < 5; i++){
+void stampa_vettore(int array[], int dimensione){
+    for(i = 0; i < dimensione; i++){
         cout<<array[i]<<endl;
     }
 }
 
-void inverti_vettore(){
-    cout<<"VETTORE Invertito stampato: "<<endl;
-    for(int i = 4; i >= 0; i--){
-        array_inverso[i] = array[i];
-        cout<<array_inverso[i]<<endl;
+void inverti_vettore(int array[], int dimensione){
+    for(i = 0, y = dimensione-1; i < dimensione/2; i++, y--){
+        temp = array[i];
+        array[i] = array[y];
+        array[y] = temp;
     }
 }
 
 int main(){
-    carica_vettore();
-    stampa_vettore();
-    inverti_vettore();
+    int n;
+    cout<<"Inserisci la DIMENSIONE del tuo ARRAY"<<endl;
+        cin>>n;
+    int array[n];
+    if(n==1){
+        carica_vettore(array, n);
+        stampa_vettore(array, n);
+        cout<<"Il VETTORE non puo' essere invertito"<<endl;
+        return 0; // lo andrà a terminare se la dimensione del vettore sarà pari a 1, dato che non si può invertire un solo numero
+    }
+
+    carica_vettore(array, n);
+    cout<<"VETTORE Stampato: "<<endl;
+    stampa_vettore(array, n);
+    inverti_vettore(array, n);
+    cout<<"VETTORE Invertito stampato: "<<endl;
+    stampa_vettore(array, n);
 }
