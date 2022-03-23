@@ -8,11 +8,23 @@ float a, b, c; // dichiarazione di variabili globali
 
 void eqsecgrado(float a, float b, float c){
     float x1, x2; // dichiarazione di variabili locali
+    float delta;
 
-    x1 = (-b - sqrt ((b*b) - 4*a*c))/(2*a); // procedimento per la risoluzione dell'equazione di sec grado.
-    x2 = (-b + sqrt ((b*b) - 4*a*c))/(2*a);
+    delta = (b*b) - (4*a*c);
+    if(delta < 0){
+        cout<<"Impossibile"<<endl;
+    }
+    if(delta>0){
+        x1 = (-b - sqrt (delta));
+        x2 = (-b + sqrt (delta));
+        cout<<x1<<" "<<x2<<endl;
+    }
+    if(delta==0){
+        x1 = (-b - sqrt (delta));
+        x2 = (-b + sqrt (delta));
+        cout<<"Le soluzioni sono identiche: "<<x1<<" "<<x2<<endl;
+    }
 
-    cout<<x1<<" "<<x2<<endl; // stampa
 }
 
 int main(){
