@@ -22,7 +22,7 @@ void stampa_vettore(){
 
 void inverti_vettore(){
     cout<<"VETTORE Invertito stampato: "<<endl;
-    for(int i = 5; i > 1; i--){
+    for(int i = 4; i >= 0; i--){
         array_inverso[i] = array[i];
         cout<<array_inverso[i]<<endl;
     }
