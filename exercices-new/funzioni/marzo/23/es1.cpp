@@ -19,11 +19,17 @@ void stampa_vettore(int array[], int dimensione){
     }
 }
 
-void inverti_vettore(int array[], int dimensione){
+/* void inverti_vettore(int array[], int dimensione){
     for(i = 0, y = dimensione-1; i < dimensione/2; i++, y--){
         temp = array[i];
         array[i] = array[y];
         array[y] = temp;
+    }
+} */
+
+void inverti_vettore(int array2[], int array[], int dimensione){
+    for(i = 0, y = dimensione-1; i < dimensione; i++, y--){
+        array2[i]=array[y];
     }
 }
 
@@ -32,6 +38,7 @@ int main(){
     cout<<"Inserisci la DIMENSIONE del tuo ARRAY"<<endl;
         cin>>n;
     int array[n];
+    int array2[n];
     if(n==1){
         carica_vettore(array, n);
         stampa_vettore(array, n);
@@ -42,7 +49,7 @@ int main(){
     carica_vettore(array, n);
     cout<<"VETTORE Stampato: "<<endl;
     stampa_vettore(array, n);
-    inverti_vettore(array, n);
+    inverti_vettore(array2, array, n);
     cout<<"VETTORE Invertito stampato: "<<endl;
-    stampa_vettore(array, n);
+    stampa_vettore(array2, n);
 }
