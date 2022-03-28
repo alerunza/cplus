@@ -8,7 +8,7 @@ uguale al numero stesso se il numero è positivo o nullo, // DEFINIZIONE DI  Val
 
 int valassoluto(int n){
      if(n<0){
-          n = n * -1;
+          n = n * -1; // si potrebbe usare abs senza nemmeno utilizzare un if
      }
      return n;
 }
