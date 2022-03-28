@@ -6,7 +6,20 @@ using namespace std;
 uguale al numero stesso se il numero è positivo o nullo, // DEFINIZIONE DI  Valore Assoluto
 è l'opposto del numero se il numero è negativo. */
 
+int valassoluto(int n){
+     if(n<0){
+          n = n * -1;
+     }
+     return n;
+}
 
 int main(){
+     int numero;
 
+     cout<<"Inserisci un NUMERO"<<endl;
+          cin>>numero;
+     
+     cout<<"VALORE Assoluto: "<<valassoluto(numero)<<endl;
+     
+     return 0;
 }
