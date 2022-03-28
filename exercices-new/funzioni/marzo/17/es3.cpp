@@ -16,7 +16,7 @@ void eqsecgrado(float a, float b, float c){
     }
     if(delta>0){
         x1 = (-b - sqrt (delta))/(2*a);
-        x2 = (-b + sqrt (delta))/(2*a); 
+        x2 = (-b + sqrt (delta))/(2*a);
         cout<<x1<<" "<<x2<<endl;
     }
     if(delta==0){
