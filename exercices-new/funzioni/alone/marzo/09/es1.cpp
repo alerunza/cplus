@@ -11,10 +11,10 @@ int valass(int x){
 }
 
 int main(){
-
     int num;
 
     cout<<"Inserisci un numero"<<endl;
         cin>>num;
+        
     cout<<"VALORE Assoluto: "<<valass(num)<<endl;
 }
