@@ -5,20 +5,20 @@ e "cubo" ( che riceve un numero reale e ne restituisce il cubo).
 crivi un programma che richiede all'utente un numero x e utilizza le due funzioni per calcolare: */
 using namespace std;
 
-void doppio(float n){
+float doppio(float n){
      float doppio;
 
      doppio = n * n;
 
-     cout<<doppio<<endl;
+     return doppio;
 }
 
-void cubo(float n){
+float cubo(float n){
      float cubo;
 
      cubo =  n * n * n;
 
-     cout<<cubo<<endl;
+     return cubo;
 }
 
 int main(){
@@ -27,8 +27,8 @@ int main(){
      cout<<"Inserisci un numero..."<<endl;
           cin>>numero;
      
-     doppio(numero);
-     cubo(numero);
+     cout<<"Ecco il DOPPIO del numero: "<<numero<<" - "<<doppio(numero)<<endl;
+     cout<<"Ecco il CUBO del numero: "<<numero<<" - "<<cubo(numero)<<endl;
 
      return 0;
 }
