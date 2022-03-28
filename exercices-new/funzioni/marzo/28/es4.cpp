@@ -7,6 +7,7 @@ using namespace std;
 
 bool checkprimo(int n){
      int divisore = 2;
+     
      while(divisore < n){
           if(n % divisore == 0){
                return false;
