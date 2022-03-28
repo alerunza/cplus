@@ -24,7 +24,6 @@ void eqsecgrado(float a, float b, float c){
         x2 = (-b + sqrt (delta))/(2*a); 
         cout<<"Le soluzioni sono identiche: "<<x1<<" "<<x2<<endl;
     }
-
 }
 
 int main(){
