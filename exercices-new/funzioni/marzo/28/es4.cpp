@@ -23,10 +23,10 @@ int main(){
      cout<<"Inserisci un NUMERO per verificare se e' un numero PRIMO."<<endl;
           cin>>numero;
 
-     if(checkprimo(numero)){ 
-          cout<<"Il NUMERO: "<<numero<<" e' primo"<<endl;
-     }else{
+     if(!checkprimo(numero)){ 
           cout<<"Il NUMERO: "<<numero<<" non e' primo"<<endl;
+     }else{
+          cout<<"Il NUMERO: "<<numero<<" e' primo"<<endl;
      }
 
 }
