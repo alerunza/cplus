@@ -8,7 +8,7 @@ using namespace std;
 float doppio(float n){
      float doppio;
 
-     doppio = n * n;
+     doppio = n * 2;
 
      return doppio;
 }
