@@ -15,13 +15,13 @@ void eqsecgrado(float a, float b, float c){
         cout<<"Impossibile"<<endl;
     }
     if(delta>0){
-        x1 = (-b - sqrt (delta));
-        x2 = (-b + sqrt (delta)); 
+        x1 = (-b - sqrt (delta))/(2*a);
+        x2 = (-b + sqrt (delta))/(2*a); 
         cout<<x1<<" "<<x2<<endl;
     }
     if(delta==0){
-        x1 = (-b - sqrt (delta));
-        x2 = (-b + sqrt (delta));
+        x1 = (-b - sqrt (delta))/(2*a);
+        x2 = (-b + sqrt (delta))/(2*a); 
         cout<<"Le soluzioni sono identiche: "<<x1<<" "<<x2<<endl;
     }
 
