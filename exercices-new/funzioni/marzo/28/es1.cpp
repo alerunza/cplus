@@ -26,9 +26,11 @@ int main(){
 
      cout<<"Inserisci un numero..."<<endl;
           cin>>numero;
-     
+          
+     int dxc = doppio(numero);
      cout<<"Ecco il DOPPIO del numero: "<<numero<<" - "<<doppio(numero)<<endl;
      cout<<"Ecco il CUBO del numero: "<<numero<<" - "<<cubo(numero)<<endl;
+     cout<<"Ecco il CUBO del DOPPIO del numero: "<<numero<<" - "<<cubo(dxc)<<endl;
 
      return 0;
 }
