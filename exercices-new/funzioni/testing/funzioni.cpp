@@ -12,7 +12,7 @@ int somma(int x, int y){
     return x+y;
 }
 
-void scambiaNum(int &x, int &y){
+void scambiaNum(int &x, int &y){   /* variabile reference */
     int i = x;
     x = y;
     y = i;
@@ -25,10 +25,8 @@ int main(){
 
     cout<<"Inserisci il tuo nome utente"<<endl;
         cin>>nomeutente;
-
     int x = 10;
     int y = 5;
-
     funzione(nomeutente);
     //somma(x, y);
     cout<<x<<" + "<<y<<endl;
