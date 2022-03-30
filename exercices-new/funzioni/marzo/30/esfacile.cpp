@@ -23,6 +23,6 @@ int main(){
      estrazione(array);
 
      for(int i = 0; i < 5; i++){
-          cout<<"Punti ottenuti dopo la memorizzazione: "<<array[i]<<endl;
+          cout<<"Punti memorizzati: "<<array[i]<<endl;
      }
 }
