@@ -23,9 +23,9 @@ void estrazione(int array[], int lanci, int dadi){
           cout<<endl;
      }
      for(int z = 0; z < lanci*dadi; z++){
-/*                cout<<array2[z]<<endl; */
+               /* cout<<array2[z]<<endl; */
                somma += array2[z];
-/*                cout<<somma<<endl;
+               /* cout<<somma<<endl;
                cout<<endl; */
      }
      cout<<"Punti TOTALI: "<<somma<<endl;
@@ -45,4 +45,8 @@ int main(){
      int array[daditot];
 
      estrazione(array, numlanci, numdadi);
+     cout<<"ciao"<<endl;
+     for(int i=0; i<daditot; i++){
+          cout<<array[i]<<endl;
+     }
 }
