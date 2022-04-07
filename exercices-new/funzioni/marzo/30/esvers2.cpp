@@ -9,7 +9,7 @@ using namespace std;
 // tot dadi andranno ad effettuare la somma tra le estrazione per il numero di dadi
 void estrazione(int array[], int lanci, int dadi){
      srand(time(NULL)); // seed per inizializzare il generatore di numeri.
-     int somma = 0, k = 0, b = 0, l = 0;
+     int somma = 0, k = 0;
      int sommadadi = 0;
      int array2[lanci*dadi];
      for(int x = 1; x <= dadi; x++){
@@ -23,7 +23,7 @@ void estrazione(int array[], int lanci, int dadi){
                cout<<"Punti ottenuti: "<<array[j]<<endl;
           }
           /* cout<<"SOMMA del "<<x<<" dado: "<<sommadadi; */
-          cout<<"sommadadi: "<<sommadadi<<endl;
+          cout<<"SOMMA del "<<x<<" dado: "<<sommadadi<<endl;
           sommadadi = 0;
           cout<<endl;
      }
