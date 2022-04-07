@@ -45,8 +45,4 @@ int main(){
      int array[daditot];
 
      estrazione(array, numlanci, numdadi);
-     cout<<"ciao"<<endl;
-     for(int i=0; i<daditot; i++){
-          cout<<array[i]<<endl;
-     }
 }
