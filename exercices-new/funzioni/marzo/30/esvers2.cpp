@@ -7,7 +7,7 @@ Creare un programma che preveda x estrazioni di y dadi a
 6 facce che vengano memorizzate in un vettore. */
 using namespace std;
 // tot dadi andranno ad effettuare la somma tra le estrazione per il numero di dadi
-void estrazione(int array[], int lanci, int dadi){
+void estrazione(int array[], int dadi, int lanci){
      srand(time(NULL)); // seed per inizializzare il generatore di numeri.
      int somma = 0, k = 0;
      int sommadadi = 0;
