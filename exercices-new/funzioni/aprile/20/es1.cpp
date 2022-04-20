@@ -29,14 +29,14 @@ void randtabelline(){
 bool checkrisposta(int risutente){
     if(ris == risutente){
         points++;
-        cout<<"Risposta ESATTA! 1 Punto AGGIUNTO! : "<<points<<endl;
+        return true;
     } else{
         if(points <= 0) {
             points = 0;
-            cout<<"Risposta SBAGLIATA! 1 Punto di PENALITA' : "<<points<<endl;
+            return false;
         } else{
             points--;
-            cout<<"Risposta SBAGLIATA! 1 Punto di PENALITA' : "<<points<<endl;
+            return false;
         }
     }
 }
@@ -53,7 +53,12 @@ int main(){
         randtabelline();
         cout<<"Inserisci la risposta"<<endl;
             cin>>numutente;
-        checkrisposta(numutente);
+        if(checkrisposta(numutente)){
+            cout<<"Risposta ESATTA! 1 Punto AGGIUNTO! : "<<points<<endl;
+        } else {
+            cout<<"Risposta SBAGLIATA! 1 Punto di PENALITA' : "<<points<<endl;
+        }
+        
     }
 
     cout<<"Hai totalizzato un PUNTEGGIO totale di : "<<points<<endl;
