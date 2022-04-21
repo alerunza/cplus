@@ -48,15 +48,19 @@ int main(){
 
     cout<<"Inserisci un NUMERO per determinare la durata del GIOCO delle TABELLINE"<<endl;
         cin>>numdomande;
+    cout<<endl;
 
     for(int i = 1; i<=numdomande; i++){
         randtabelline();
         cout<<"Inserisci la risposta"<<endl;
             cin>>numutente;
+        cout<<endl;
         if(checkrisposta(numutente)){
             cout<<"Risposta ESATTA! 1 Punto AGGIUNTO! : "<<points<<endl;
+            cout<<endl;
         } else {
             cout<<"Risposta SBAGLIATA! 1 Punto di PENALITA' : "<<points<<endl;
+            cout<<endl;
         }
         
     }
