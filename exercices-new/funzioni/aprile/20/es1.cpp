@@ -61,6 +61,7 @@ int main(){
         
     }
 
-    cout<<"Hai totalizzato un PUNTEGGIO totale di : "<<points<<endl;
+    cout<<"Hai totalizzato un PUNTEGGIO totale di : "<<points<<"/"<<numdomande<<endl;
+
     
 }
