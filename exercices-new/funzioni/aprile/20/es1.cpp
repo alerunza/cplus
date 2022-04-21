@@ -18,11 +18,11 @@ int points = 0;
 void randtabelline(){
     int num1, num2;
     
-    for(int i = 0; i<2; i++){
-        num1 = rand()%9+2; // parte da 2 fino a 10
-        num2 = rand()%9+2;
-    }
+    num1 = rand()%9+2; // parte da 2 fino a 10
+    num2 = rand()%9+2;
+    
     cout<<num1<<" x "<<num2<<endl;
+    
     ris = num1 * num2;
 }
 
@@ -54,6 +54,7 @@ int main(){
         randtabelline();
         cout<<"Inserisci la risposta"<<endl;
             cin>>numutente;
+        
         cout<<endl;
         if(checkrisposta(numutente)){
             cout<<"Risposta ESATTA! 1 Punto AGGIUNTO! : "<<points<<endl;
@@ -62,7 +63,6 @@ int main(){
             cout<<"Risposta SBAGLIATA! 1 Punto di PENALITA' : "<<points<<endl;
             cout<<endl;
         }
-        
     }
 
     cout<<"Hai totalizzato un PUNTEGGIO totale di : "<<points<<"/"<<numdomande<<endl;
