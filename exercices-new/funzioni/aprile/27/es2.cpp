@@ -14,7 +14,7 @@ m*1,75 m) = 65 kg/3,0 m2 =
 di massa corporea, utilizzando una funzione. */
 using namespace std;
 
-void BMI(int peso, float altezza){
+void BMI(float peso, float altezza){
     float bmi;
 
     bmi = peso / (altezza * altezza);
@@ -24,7 +24,7 @@ void BMI(int peso, float altezza){
 
 int main(){
 
-    int kg;
+    float kg;
     float altezza;
 
     cout<<"Inserisci il tuo PESO in KG e la tua ALTEZZA in Metri"<<endl;
