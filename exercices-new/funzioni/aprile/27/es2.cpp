@@ -14,8 +14,9 @@ m*1,75 m) = 65 kg/3,0 m2 =
 di massa corporea, utilizzando una funzione. */
 using namespace std;
 
+float bmi;
+
 void BMI(float peso, float altezza){
-    float bmi;
 
     bmi = peso / (altezza * altezza);
 
@@ -31,5 +32,29 @@ int main(){
         cin>>kg>>altezza;
 
     BMI(kg, altezza);
+
+    if(bmi<=16.5){
+        cout<<"BMI Categoria (Sottopeso severo)"<<endl;
+    }
+    if(bmi>=16.6 and bmi<=18.4){
+        cout<<"BMI Categoria (Sottopeso)"<<endl;
+    }
+    if(bmi>=18.5 and bmi<=24.9){
+        cout<<"BMI Categoria (Normale)"<<endl;
+    }
+    if(bmi>=25 and bmi<=30){
+        cout<<"BMI Categoria (Sovrappeso)"<<endl;
+    }
+    if(bmi>=30.1 and bmi<=34.9){
+        cout<<"BMI Categoria (Obesità primo grado)"<<endl;
+    }
+    if(bmi>=35 and bmi<=40){
+        cout<<"BMI Categoria (Obesità secondo grado)"<<endl;
+    }
+    if(bmi>=40){
+        cout<<"BMI Categoria (Obesità terzo grado)"<<endl;
+    }
+
+    cout<<"Fonte dei dati scientifici: my-personaltrainer.it/calcolo-bmi.html"<<endl;
 
 }
