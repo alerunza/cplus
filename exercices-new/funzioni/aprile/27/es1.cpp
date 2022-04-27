@@ -27,8 +27,12 @@ void livello(int &punteggio){
 int main(){
     int punteggio;
 
-    cout<<"Inserisci il PUNTEGGIO della CERTIFICAZIONE d'INGLESE"<<endl;
-        cin>>punteggio;
+        do{
+            cout<<"Inserisci il PUNTEGGIO della CERTIFICAZIONE d'INGLESE"<<endl;
+                cin>>punteggio;
+        }
+        while(punteggio<0 or punteggio>100);
+        
     
     livello(punteggio);
     
