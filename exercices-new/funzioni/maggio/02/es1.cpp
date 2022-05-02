@@ -1,5 +1,5 @@
 #include <iostream>
-
+/* Scrivere un programma in C++ che permetta di ordinare in modo crescente tre numeri interi. */
 using namespace std;
 
 void swap(int &x, int &y);
