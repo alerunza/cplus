@@ -110,7 +110,7 @@ void distraduepunti(float x1, float x2, float x3, float y1, float y2, float y3){
     cout<<"Distanza tra due PUNTI ON: "<<ONtot<<endl;
     cout<<"Distanza tra due PUNTI MN: "<<MONtot<<endl;
 
-    int periAOB, periMON;
+    float periAOB, periMON;
     
     periAOB = AOtot + OBtot + ABtot;
     periMON = OMtot + ONtot + MONtot;
