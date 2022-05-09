@@ -2,11 +2,15 @@
 
 using namespace std;
 
-void test(int x){
-     cout<<x<<endl;
-}
+int add(int x , int y)  
+{  
+    return x+y;  
+}  
 int main(){
-     int z = 5;
-     test(z);
+ int (*funcptr)(int,int);  // Declaration of function pointer
+ funcptr=add; // In this case we are pointing to the add function  
+
+ int sum=funcptr(7,10);  
+ std::cout << "Sum=" <<sum<< std::endl; 
 
 }
