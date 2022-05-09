@@ -31,13 +31,21 @@ void minutiinore(float h1, float m1, float h2, float m2){
      cout<<"Il tempo trascorso in ORE e MINUTI e': "<<abs(ora)<<" ore e "<<abs(minuti)<<" minuti"<<endl;
 }
 
-float costoparcheggio(int ore){
-     float soldi;
+void costoparcheggio(int ore){
+     float soldi = 0;
+     if(ore>=1 && ore<=7){
+          soldi += 1.50;
+          soldi += 1.20 * ore-1;
+     }
+     if(ore>=8){
+          soldi += 9;
+     }
+     if(ore>=9){
+          soldi += 1.20 * ore-1;
+     }
+     
 
-     /* if(ore>1) */ //non va.... l'if mi fa milioniiii
-     soldi+= 1.20 * ore;
-
-     return abs(soldi);
+     cout<<"Hai SPESO "<<soldi<<" $"<<endl;
 }
 
 int main(){
@@ -58,16 +66,17 @@ int main(){
      cout<<"Inserisci l'ORARIO di quando sei arrivato a CASA dal PARCHEGGIO (Ora & Minuti)"<<endl;
           cin>>casaparcheggioh>>casaparcheggiom;
 
-     cout<<"Tempo TRASCORSO tra quando sei PARTITO da CASA al PARCHEGGIO ("<<casah<<":"<<casam<<") a ("<<parcheggioh<<":"<<parcheggiom<<")"<<endl;
+     cout<<"\nTempo TRASCORSO tra quando sei PARTITO da CASA al PARCHEGGIO ("<<casah<<":"<<casam<<") a ("<<parcheggioh<<":"<<parcheggiom<<")"<<endl;
      oreinminuti(casah, casam, parcheggioh, parcheggiom);
      minutiinore(casah, casam, parcheggioh, parcheggiom);
-     cout<<"\nTempo TRASCORSO tra quando sei PARTITO dal PARCHEGGIO a CASA "<<parcheggiocasah<<":"<<parcheggiocasam<<") a ("<<casaparcheggioh<<":"<<casaparcheggiom<<")"<<endl;
+     cout<<"\nTempo TRASCORSO tra quando sei PARTITO dal PARCHEGGIO a CASA ("<<parcheggiocasah<<":"<<parcheggiocasam<<") a ("<<casaparcheggioh<<":"<<casaparcheggiom<<")"<<endl;
      oreinminuti(parcheggiocasah, parcheggiocasam, casaparcheggioh, casaparcheggiom);
      minutiinore(parcheggiocasah, parcheggiocasam, casaparcheggioh, casaparcheggiom);
      
-     int oretot = parcheggioh - parcheggiocasah;
-     
+     float oretot = parcheggioh - parcheggiocasah;
+     int barbagianni;
+     barbagianni = abs(oretot);
      cout<<"\nSei STATO nel PARCHEGGIO per "<<abs(oretot)<<" ora/e"<<endl;
-     cout<<"Hai SPESO "<<costoparcheggio(oretot)<<" $"<<endl;
+     costoparcheggio(barbagianni);
 
 }
