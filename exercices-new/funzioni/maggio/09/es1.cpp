@@ -16,6 +16,8 @@ void oreinminuti(float h1, float m1, float h2, float m2){
 
      ora = h1 - h2;
      minuti = m1 - m2;
+     ora = abs(ora);
+     minuti = abs(minuti);
      minuti1 = ora * 60;
      minuti2 = minuti1 + minuti;
 
@@ -28,14 +30,18 @@ void minutiinore(float h1, float m1, float h2, float m2){
 
      ora = h1 - h2;
      minuti = m1 - m2;
+     ora = abs(ora);
+     minuti = abs(minuti);
      cout<<"Il tempo trascorso in ORE e MINUTI e': "<<abs(ora)<<" ore e "<<abs(minuti)<<" minuti"<<endl;
 }
 
 void costoparcheggio(int ore){
      float soldi = 0;
-     if(ore>=1 && ore<=7){
+     if(ore>=1){
           soldi += 1.50;
-          soldi += 1.20 * ore-1;
+          if(ore>=2 && ore<=7){
+               soldi += 1.20 * ore-1;
+          }
      }
      if(ore>=8){
           soldi += 9;
@@ -43,7 +49,6 @@ void costoparcheggio(int ore){
      if(ore>=9){
           soldi += 1.20 * ore-1;
      }
-     
 
      cout<<"Hai SPESO "<<soldi<<" $"<<endl;
 }
