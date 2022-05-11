@@ -10,7 +10,7 @@ int main(){
      cout<<"Inserisci un NUMERO"<<endl;
           cin>>numero;
 
-     cout<<"Il NUMERO Fattoriale e' "<<numero<<"! : "<<numfattoriale(numero)<<endl;
+     cout<<"Il NUMERO Fattoriale "<<numero<<"! e' : "<<numfattoriale(numero)<<endl;
 }
 
 int numfattoriale(int num){
