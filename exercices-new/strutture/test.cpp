@@ -1,5 +1,5 @@
 #include <iostream>
-/* Calcolare la differenza in tempo fra due orari utilizzando le strutture */
+/* Calcolare la differenza in minuti fra due orari utilizzando le strutture */
 using namespace std;
 
 struct orario{
@@ -18,19 +18,13 @@ int main(){
           cin>>tempo.ora2>>tempo.minuti2;
      cout<<"Secondo ORARIO: "<<tempo.ora2<<":"<<tempo.minuti2<<endl;
 
-     int ora, ora2;
+     int oratot;
      
-     ora = tempo.ora * 60 + tempo.minuti;
-     ora2 = tempo.ora2 * 60 + tempo.minuti2;
+     oratot = (tempo.ora * 60 + tempo.minuti) - (tempo.ora2 * 60 + tempo.minuti2);
 
-     int totaleora;
+     if(oratot<0){
+          oratot = oratot * (-1);
+     }
 
-     if(ora>ora2){
-          totaleora = ora - ora2;
-     }
-     if(ora<ora2){
-          totaleora = ora2 - ora;
-     }
-     
-     cout<<totaleora<<" minuti"<<endl;
+     cout<<oratot<<" minuti"<<endl;
 }
