@@ -4,23 +4,22 @@ using namespace std;
 
 struct orario{
      int ora;
-     int ora2;
      int minuti;
-     int minuti2;
 };
 
 int main(){
      orario tempo;
+     orario tempo2;
      
      cout<<"Inserisci due orari ES: (15:40 & 19:30)"<<endl;
           cin>>tempo.ora>>tempo.minuti;
      cout<<"Primo ORARIO: "<<tempo.ora<<":"<<tempo.minuti<<"\nInserisci il secondo orario"<<endl;
-          cin>>tempo.ora2>>tempo.minuti2;
-     cout<<"Secondo ORARIO: "<<tempo.ora2<<":"<<tempo.minuti2<<endl;
+          cin>>tempo2.ora>>tempo2.minuti;
+     cout<<"Secondo ORARIO: "<<tempo2.ora<<":"<<tempo2.minuti<<endl;
 
      int oratot;
      
-     oratot = (tempo.ora * 60 + tempo.minuti) - (tempo.ora2 * 60 + tempo.minuti2);
+     oratot = (tempo.ora * 60 + tempo.minuti) - (tempo2.ora * 60 + tempo2.minuti);
 
      if(oratot<0){
           oratot = oratot * (-1);
