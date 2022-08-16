@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
      srand(time(NULL)); // seed per inizializzare il generatore di numeri.
-     int random = rand() % 37;
+     int random = rand() % 2;
 
      int saldo = 100;
      char rispnum, rispmaxmin, rispdispari;
