@@ -15,7 +15,7 @@ int main()
      string risposta;
 
      cout << "Benvenuto nella European Roulette by chvbs & Mich24" << endl;
-     cout << "[3][6][9][12][15][18][21][24][27][30][33][36]\n[2][5][8][11][14][17][20][23][26][29][32][35]\n[1][4][7][10][13][16][19][22][25][28][31][34]" << endl;
+     cout << "[0][3][6][9][12][15][18][21][24][27][30][33][36]\n[2][5][8][11][14][17][20][23][26][29][32][35]\n[1][4][7][10][13][16][19][22][25][28][31][34]" << endl;
      cout << "Hai un saldo iniziale di: " << saldo << endl;
 
      do
@@ -145,7 +145,6 @@ int main()
                vincita = puntata * 35;
                saldo += vincita;
                cout << "HAI VINTO: " << vincita << endl;
-               cout << "Il tuo SALDO adesso e': " << saldo << endl;
           }
 
           if ((random % 2 == 0) and (rispdispari == 'p' or rispdispari == 'P')) // vincita su una puntata pari
@@ -153,7 +152,6 @@ int main()
                vincita = puntatapariodispari * 2;
                saldo += vincita;
                cout << "HAI VINTO: " << vincita << endl;
-               cout << "Il tuo SALDO adesso e': " << saldo << endl;
           }
 
           if ((random % 2 != 0) and (rispdispari == 'd' or rispdispari == 'D')) // vincita su una puntata dispari
@@ -161,7 +159,18 @@ int main()
                vincita = puntatapariodispari * 2;
                saldo += vincita;
                cout << "HAI VINTO: " << vincita << endl;
-               cout << "Il tuo SALDO adesso e': " << saldo << endl;
+          }
+          if ((random >= 18) and (rispmaxmin == 'e' or rispmaxmin == 'E'))
+          {
+               vincita = puntatapariodispari * 2;
+               saldo += vincita;
+               cout << "HAI VINTO: " << vincita << endl;
+          }
+          if ((random <= 18) and (rispmaxmin == 'g' or rispmaxmin == 'G'))
+          {
+               vincita = puntatapariodispari * 2;
+               saldo += vincita;
+               cout << "HAI VINTO: " << vincita << endl;
           }
 
           cout << "SALDO attuale: " << saldo << endl;
