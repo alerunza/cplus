@@ -12,13 +12,18 @@ int main()
      int saldo = 100;
      char rispnum, rispmaxmin, rispdispari;
      int puntata, puntataspec, puntatapariodispari, puntatamaxmin;
-     int vincita;
+     int vincita, conta=0;
+     string risposta;
 
      cout << "Benvenuto nella European Roulette by chvbs & Mich24" << endl;
      cout << "[3][6][9][12][15][18][21][24][27][30][33][36]\n[2][5][8][11][14][17][20][23][26][29][32][35]\n[1][4][7][10][13][16][19][22][25][28][31][34]" << endl;
      cout << "Hai un saldo iniziale di: " << saldo << endl;
+     
+     do{
+
      cout << "Vuoi puntare su un numero specifico? (y/n)" << endl;
      cin >> rispnum;
+     
      if (rispnum == 'y' or rispnum == 'Y')
      {
           do
@@ -103,7 +108,7 @@ int main()
                     cin >> puntatamaxmin;
                     if (puntatamaxmin > saldo)
                     {
-                         cout << "Hai puntato più del tuo saldo DISPONIBILE - Saldo: " << saldo << endl;
+                         cout << "Hai puntato piu' del tuo saldo DISPONIBILE - Saldo: " << saldo << endl;
                     }
                     if (puntatamaxmin < 0)
                     {
@@ -122,7 +127,7 @@ int main()
                     cin >> puntatamaxmin;
                     if (puntatamaxmin > saldo)
                     {
-                         cout << "Hai puntato più del tuo saldo DISPONIBILE - Saldo: " << saldo << endl;
+                         cout << "Hai puntato piu' del tuo saldo DISPONIBILE - Saldo: " << saldo << endl;
                     }
                     if (puntatamaxmin < 0)
                     {
@@ -138,28 +143,34 @@ int main()
      if (random == puntata) // vincita su una puntata specifica
      {
           vincita = puntata * 35;
-          saldo = saldo + vincita;
-          cout << "Hai VINTO. Il tuo guadagno e' di: " << vincita << endl;
+          saldo += vincita;
+          cout << "HAI VINTO :" << vincita << endl;
           cout << "Il tuo SALDO adesso e': " << saldo << endl;
      }
 
      else if ((random % 2 == 0) and (rispdispari == 'p' or rispdispari == 'P')) // vincita su una puntata pari
      {
           vincita = puntatapariodispari * 2;
-          saldo = saldo + vincita;
-          cout << "Hai VINTO. Il tuo guadagno e' di: " << vincita << endl;
+          saldo += vincita;
+          cout << "HAI VINTO :" << vincita << endl;
           cout << "Il tuo SALDO adesso e': " << saldo << endl;
      }
 
      else if ((random % 2 != 0) and (rispdispari == 'd' or rispdispari == 'D')) // vincita su una puntata dispari
      {
           vincita = puntatapariodispari * 2;
-          saldo = saldo + vincita;
-          cout << "Hai VINTO. Il tuo guadagno e' di: " << vincita << endl;
+          saldo += vincita;
+          cout << "HAI VINTO :" << vincita << endl;
           cout << "Il tuo SALDO adesso e': " << saldo << endl;
      }
-     else
-     {
-          cout << "Hai PERSO questa puntata.\nIl tuo SALDO adesso e': " << saldo << endl;
+
+     cout<<"SALDO attuale : "<< saldo << endl;
+     cout<<"Vuoi giocare ancora? (Yes/No)"<<endl;
+     cin>>risposta;
+     
      }
+     while(risposta == "Yes" or risposta == "yes");
+
+     cout<<"Alla prossima"<<endl;
+     
 }
