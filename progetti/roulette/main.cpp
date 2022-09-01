@@ -12,6 +12,8 @@ struct casino
 
 int main()
 {
+     system("TITLE European Roulette");
+
      casino roulette[4];
 
      srand(time(NULL)); // seed per inizializzare il generatore di numeri.
